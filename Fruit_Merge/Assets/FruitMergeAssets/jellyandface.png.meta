@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: b44205bdd73eb4542801a106d1161fe3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5849088173936393571
+    second: jellyandface_0
+  - first:
+      213: 2774505301381372484
+    second: jellyandface_1
+  - first:
+      213: -6061263601478268910
+    second: jellyandface_2
+  - first:
+      213: -2470004837184217524
+    second: jellyandface_3
+  - first:
+      213: -214103430302302189
+    second: jellyandface_4
+  - first:
+      213: 938572518141700962
+    second: jellyandface_5
+  - first:
+      213: -8704192819966098156
+    second: jellyandface_6
+  - first:
+      213: 8530427203622689773
+    second: jellyandface_7
+  - first:
+      213: -2455205411118521866
+    second: jellyandface_8
+  - first:
+      213: 5527531101017395922
+    second: jellyandface_9
+  - first:
+      213: 5306034274421430862
+    second: jellyandface_10
+  - first:
+      213: 6019406155581626709
+    second: jellyandface_11
+  - first:
+      213: -6795234788359288525
+    second: jellyandface_12
+  - first:
+      213: 3661477371480032255
+    second: jellyandface_13
+  - first:
+      213: -1762179554154949269
+    second: jellyandface_14
+  - first:
+      213: -4347747374732311425
+    second: jellyandface_15
+  - first:
+      213: 1580697730650283098
+    second: jellyandface_16
+  - first:
+      213: 6779657099007626220
+    second: jellyandface_17
+  - first:
+      213: 5767374786307248476
+    second: jellyandface_18
+  - first:
+      213: -2123347600545221988
+    second: jellyandface_19
+  - first:
+      213: 6027075102366480846
+    second: jellyandface_20
+  - first:
+      213: -370924794239678055
+    second: jellyandface_21
+  - first:
+      213: 3693280814693966413
+    second: jellyandface_22
+  - first:
+      213: -4687532991576590340
+    second: jellyandface_23
+  - first:
+      213: 2696477094887032612
+    second: jellyandface_24
+  - first:
+      213: -412036055212271139
+    second: jellyandface_25
+  - first:
+      213: 7451316735142483127
+    second: jellyandface_26
+  - first:
+      213: -2386052208357465683
+    second: jellyandface_27
+  - first:
+      213: 5737944845057356292
+    second: jellyandface_28
+  - first:
+      213: 8208659494404576649
+    second: jellyandface_29
+  - first:
+      213: 4669802167402025467
+    second: jellyandface_30
+  - first:
+      213: -5970056257879147822
+    second: jellyandface_31
+  - first:
+      213: -4736909588071492766
+    second: jellyandface_32
+  - first:
+      213: -694537402819152875
+    second: jellyandface_33
+  - first:
+      213: 6131759312804364478
+    second: jellyandface_34
+  - first:
+      213: -8243427482361488509
+    second: jellyandface_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jellyandface_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 730
+        width: 168
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dba6354b22c2150800000000000000
+      internalID: 5849088173936393571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 730
+        width: 169
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a56442fd5018620800000000000000
+      internalID: 2774505301381372484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 730
+        width: 170
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21802ef4ed012eba0800000000000000
+      internalID: -6061263601478268910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_3
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 730
+        width: 169
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e532eefa7c8bdd0800000000000000
+      internalID: -2470004837184217524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_4
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 730
+        width: 170
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31083a3801a570df0800000000000000
+      internalID: -214103430302302189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_5
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 730
+        width: 169
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ba7c38bba760d00800000000000000
+      internalID: 938572518141700962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_6
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 760
+        width: 123
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4154a6d3fbe743780800000000000000
+      internalID: -8704192819966098156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_7
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 775
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb5246785a226670800000000000000
+      internalID: 8530427203622689773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_8
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 788
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1e9a3dfab5dedd0800000000000000
+      internalID: -2455205411118521866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 567
+        width: 158
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2d011104cb5bc40800000000000000
+      internalID: 5527531101017395922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_10
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 567
+        width: 151
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4adfec5f02d2a940800000000000000
+      internalID: 5306034274421430862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_11
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 567
+        width: 151
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5591e3e910a398350800000000000000
+      internalID: 6019406155581626709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_12
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 567
+        width: 151
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339c77276f972b1a0800000000000000
+      internalID: -6795234788359288525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_13
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 567
+        width: 156
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3c230254e20d230800000000000000
+      internalID: 3661477371480032255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_14
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 567
+        width: 151
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65532c280b7b87e0800000000000000
+      internalID: -1762179554154949269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_15
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 674
+        width: 66
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7481fb4cc2b9a3c0800000000000000
+      internalID: -4347747374732311425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 403
+        width: 158
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5c1dac0634cfe510800000000000000
+      internalID: 1580697730650283098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_17
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 403
+        width: 151
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb0e4d163e261e50800000000000000
+      internalID: 6779657099007626220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_18
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 403
+        width: 151
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c515360bfc4d90050800000000000000
+      internalID: 5767374786307248476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_19
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 403
+        width: 151
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92f2d67b9a5882e0800000000000000
+      internalID: -2123347600545221988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_20
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 403
+        width: 156
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9b72f6fd874a350800000000000000
+      internalID: 6027075102366480846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_21
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 403
+        width: 151
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99985f86dd53adaf0800000000000000
+      internalID: -370924794239678055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_22
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 446
+        width: 96
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d426997455b214330800000000000000
+      internalID: 3693280814693966413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 233
+        width: 158
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7372c649982feb0800000000000000
+      internalID: -4687532991576590340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_24
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 233
+        width: 151
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42708b991afcb6520800000000000000
+      internalID: 2696477094887032612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_25
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 233
+        width: 151
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd95b6e0467284af0800000000000000
+      internalID: -412036055212271139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_26
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 233
+        width: 151
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b457138715686760800000000000000
+      internalID: 7451316735142483127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_27
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 233
+        width: 156
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da12159882a03eed0800000000000000
+      internalID: -2386052208357465683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_28
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 233
+        width: 151
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4027d668f6641af40800000000000000
+      internalID: 5737944845057356292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_29
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 303
+        width: 123
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9855f1e91540be170800000000000000
+      internalID: 8208659494404576649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_30
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 299
+        width: 115
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf1d85f54587ec040800000000000000
+      internalID: 4669802167402025467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_31
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 145
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2daf304d679162da0800000000000000
+      internalID: -5970056257879147822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_32
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 154
+        width: 123
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2635bdda3dd134eb0800000000000000
+      internalID: -4736909588071492766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_33
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 164
+        width: 96
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514fdb579e18c56f0800000000000000
+      internalID: -694537402819152875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 168
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0c5e78b92681550800000000000000
+      internalID: 6131759312804364478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyandface_35
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 0
+        width: 123
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b962e5166799d80800000000000000
+      internalID: -8243427482361488509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jellyandface_0: 5849088173936393571
+      jellyandface_1: 2774505301381372484
+      jellyandface_10: 5306034274421430862
+      jellyandface_11: 6019406155581626709
+      jellyandface_12: -6795234788359288525
+      jellyandface_13: 3661477371480032255
+      jellyandface_14: -1762179554154949269
+      jellyandface_15: -4347747374732311425
+      jellyandface_16: 1580697730650283098
+      jellyandface_17: 6779657099007626220
+      jellyandface_18: 5767374786307248476
+      jellyandface_19: -2123347600545221988
+      jellyandface_2: -6061263601478268910
+      jellyandface_20: 6027075102366480846
+      jellyandface_21: -370924794239678055
+      jellyandface_22: 3693280814693966413
+      jellyandface_23: -4687532991576590340
+      jellyandface_24: 2696477094887032612
+      jellyandface_25: -412036055212271139
+      jellyandface_26: 7451316735142483127
+      jellyandface_27: -2386052208357465683
+      jellyandface_28: 5737944845057356292
+      jellyandface_29: 8208659494404576649
+      jellyandface_3: -2470004837184217524
+      jellyandface_30: 4669802167402025467
+      jellyandface_31: -5970056257879147822
+      jellyandface_32: -4736909588071492766
+      jellyandface_33: -694537402819152875
+      jellyandface_34: 6131759312804364478
+      jellyandface_35: -8243427482361488509
+      jellyandface_4: -214103430302302189
+      jellyandface_5: 938572518141700962
+      jellyandface_6: -8704192819966098156
+      jellyandface_7: 8530427203622689773
+      jellyandface_8: -2455205411118521866
+      jellyandface_9: 5527531101017395922
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

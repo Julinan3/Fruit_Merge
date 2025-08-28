@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 223fbd7c1dacbea438f0cf9eedcf35a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2671500823673075147
+    second: Bitkisap_0
+  - first:
+      213: 8603532487773169406
+    second: Bitkisap_1
+  - first:
+      213: 4769395215607276211
+    second: Bitkisap_2
+  - first:
+      213: 7919846369186842650
+    second: Bitkisap_3
+  - first:
+      213: 3909587089713429769
+    second: Bitkisap_4
+  - first:
+      213: -3204643685991426851
+    second: Bitkisap_5
+  - first:
+      213: 2885804125451625736
+    second: Bitkisap_6
+  - first:
+      213: 8795453224839364020
+    second: Bitkisap_7
+  - first:
+      213: -4807853303962952711
+    second: Bitkisap_8
+  - first:
+      213: -6427182217917059874
+    second: Bitkisap_9
+  - first:
+      213: -6082692253523325086
+    second: Bitkisap_10
+  - first:
+      213: -4560854357483883502
+    second: Bitkisap_11
+  - first:
+      213: -14745537970176750
+    second: Bitkisap_12
+  - first:
+      213: 2554747466120277955
+    second: Bitkisap_13
+  - first:
+      213: -5598158298238795648
+    second: Bitkisap_14
+  - first:
+      213: -6510859107427896284
+    second: Bitkisap_15
+  - first:
+      213: 813412371154493487
+    second: Bitkisap_16
+  - first:
+      213: 1173209692718512506
+    second: Bitkisap_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bitkisap_0
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 5142
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5723c48d3131520800000000000000
+      internalID: 2671500823673075147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_1
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 5049
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6a043d633e56770800000000000000
+      internalID: 8603532487773169406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_2
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 5014
+        width: 71
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b228b3edab403240800000000000000
+      internalID: 4769395215607276211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 4859
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a188c07cf42f8ed60800000000000000
+      internalID: 7919846369186842650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_4
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 4823
+        width: 39
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d72d48eb4a14630800000000000000
+      internalID: 3909587089713429769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_5
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 4604
+        width: 75
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd458c8eb81d683d0800000000000000
+      internalID: -3204643685991426851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_6
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 4550
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805a6ecff8f6c0820800000000000000
+      internalID: 2885804125451625736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_7
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 4473
+        width: 87
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd3d119b1abf0a70800000000000000
+      internalID: 8795453224839364020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4435
+        width: 33
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb9915a4e2174db0800000000000000
+      internalID: -4807853303962952711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 4450
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edca85253df0ec6a0800000000000000
+      internalID: -6427182217917059874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_10
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 4350
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26fc8b67f9fe59ba0800000000000000
+      internalID: -6082692253523325086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_11
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 0
+        width: 221
+        height: 4321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21471e5502794b0c0800000000000000
+      internalID: -4560854357483883502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_12
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 4287
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21df347e20d9bcff0800000000000000
+      internalID: -14745537970176750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_13
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 4078
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cfade8e849447320800000000000000
+      internalID: 2554747466120277955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_14
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 3974
+        width: 53
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080421520b85f42b0800000000000000
+      internalID: -5598158298238795648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_15
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 3830
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424b4274328c4a5a0800000000000000
+      internalID: -6510859107427896284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_16
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 3724
+        width: 61
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f20629eed32d94b00800000000000000
+      internalID: 813412371154493487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bitkisap_17
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 3693
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a793885eff3184010800000000000000
+      internalID: 1173209692718512506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bitkisap_0: 2671500823673075147
+      Bitkisap_1: 8603532487773169406
+      Bitkisap_10: -6082692253523325086
+      Bitkisap_11: -4560854357483883502
+      Bitkisap_12: -14745537970176750
+      Bitkisap_13: 2554747466120277955
+      Bitkisap_14: -5598158298238795648
+      Bitkisap_15: -6510859107427896284
+      Bitkisap_16: 813412371154493487
+      Bitkisap_17: 1173209692718512506
+      Bitkisap_2: 4769395215607276211
+      Bitkisap_3: 7919846369186842650
+      Bitkisap_4: 3909587089713429769
+      Bitkisap_5: -3204643685991426851
+      Bitkisap_6: 2885804125451625736
+      Bitkisap_7: 8795453224839364020
+      Bitkisap_8: -4807853303962952711
+      Bitkisap_9: -6427182217917059874
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
