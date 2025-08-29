@@ -524,8 +524,6 @@ MonoBehaviour:
   - {fileID: 7138442756232155507, guid: f13f50dc44f001b409c6b98d9657b538, type: 3}
   - {fileID: 2803552726808729547, guid: 33d81ff6759ae8a429383c8ba4308d1d, type: 3}
   - {fileID: 6010344187753947200, guid: 977a9b6c7f6654045882e68dc796e189, type: 3}
-  score: 0
-  scoreText: {fileID: 0}
 --- !u!4 &1254906686
 Transform:
   m_ObjectHideFlags: 0
@@ -722,7 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a49725539361ce42893d8a6debf05f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnController
-  spawnPosition: {fileID: 0}
+  spawnPosition: {fileID: 1804654684}
 --- !u!1 &1896460420
 GameObject:
   m_ObjectHideFlags: 0
