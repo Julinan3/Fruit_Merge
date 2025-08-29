@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5205819598917625976}
   - component: {fileID: 1372444854627322441}
-  - component: {fileID: 6887643563574911862}
+  - component: {fileID: 7576467311322930931}
   m_Layer: 0
   m_Name: 9
   m_TagString: Untagged
@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.26, y: 0.45, z: 0}
-  m_LocalScale: {x: 0.22, y: 0.22, z: 1}
+  m_LocalScale: {x: 0.28, y: 0.24, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,8 +91,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &6887643563574911862
-CircleCollider2D:
+--- !u!70 &7576467311322930931
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -125,5 +125,6 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.04606664, y: -0.36853284}
-  m_Radius: 4.3671937
+  m_Offset: {x: 0.037566252, y: -0.2253988}
+  m_Size: {x: 7.695133, y: 8.894521}
+  m_Direction: 0
