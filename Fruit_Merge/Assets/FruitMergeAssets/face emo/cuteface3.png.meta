@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: d901aaf7b85e33b4aa5924c0cc1e898d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2320431094216104145
+    second: cuteface3_0
+  - first:
+      213: 2411224540516186546
+    second: cuteface3_1
+  - first:
+      213: 1526946127525264708
+    second: cuteface3_2
+  - first:
+      213: 4197730878737604522
+    second: cuteface3_3
+  - first:
+      213: -7984986264988165078
+    second: cuteface3_4
+  - first:
+      213: -3038396851691408923
+    second: cuteface3_5
+  - first:
+      213: -7306906799820607689
+    second: cuteface3_6
+  - first:
+      213: -1514073791531383791
+    second: cuteface3_7
+  - first:
+      213: -4855815749317327330
+    second: cuteface3_8
+  - first:
+      213: 7198413071006130371
+    second: cuteface3_9
+  - first:
+      213: -3291274268377985982
+    second: cuteface3_10
+  - first:
+      213: 3540461979519164520
+    second: cuteface3_11
+  - first:
+      213: -6087041182694556084
+    second: cuteface3_12
+  - first:
+      213: 5714592154601478863
+    second: cuteface3_13
+  - first:
+      213: -8574203648121016188
+    second: cuteface3_14
+  - first:
+      213: 1230529222850952184
+    second: cuteface3_15
+  - first:
+      213: 6373911933952429209
+    second: cuteface3_16
+  - first:
+      213: 1303521187806061335
+    second: cuteface3_17
+  - first:
+      213: -6029473222926451274
+    second: cuteface3_18
+  - first:
+      213: 7912556906289677131
+    second: cuteface3_19
+  - first:
+      213: 6436061109610403244
+    second: cuteface3_20
+  - first:
+      213: 8976565009371197440
+    second: cuteface3_21
+  - first:
+      213: -4558896724137126130
+    second: cuteface3_22
+  - first:
+      213: -4328115888718797440
+    second: cuteface3_23
+  - first:
+      213: -6704836205541316003
+    second: cuteface3_24
+  - first:
+      213: 6632778562077464234
+    second: cuteface3_25
+  - first:
+      213: 6229533432583349822
+    second: cuteface3_26
+  - first:
+      213: -4010896820734402893
+    second: cuteface3_27
+  - first:
+      213: 3338790607346005477
+    second: cuteface3_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cuteface3_0
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 7532
+        width: 342
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f276a77c63c2ccfd0800000000000000
+      internalID: -2320431094216104145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_1
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 7551
+        width: 311
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9fb23c1f3667120800000000000000
+      internalID: 2411224540516186546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 6987
+        width: 437
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44d3d42b96dc03510800000000000000
+      internalID: 1526946127525264708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_3
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 6982
+        width: 433
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aafd7d16ef5514a30800000000000000
+      internalID: 4197730878737604522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_4
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 6475
+        width: 568
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2cd10b5c41af2190800000000000000
+      internalID: -7984986264988165078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_5
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 5765
+        width: 433
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e1b448592275d5d0800000000000000
+      internalID: -3038396851691408923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_6
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 5699
+        width: 390
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f6ecdaaf6a89a90800000000000000
+      internalID: -7306906799820607689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5271
+        width: 450
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1140b0498edecfae0800000000000000
+      internalID: -1514073791531383791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_8
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 4890
+        width: 322
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16813f9d4dac9cb0800000000000000
+      internalID: -4855815749317327330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_9
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 5282
+        width: 427
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c069db9c86e5e360800000000000000
+      internalID: 7198413071006130371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_10
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3603
+        width: 508
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c42f6ad7b0352d0800000000000000
+      internalID: -3291274268377985982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_11
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 3678
+        width: 109
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8602406896f322130800000000000000
+      internalID: 3540461979519164520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_12
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 3691
+        width: 94
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e315c7b4c768ba0800000000000000
+      internalID: -6087041182694556084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_13
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 3705
+        width: 91
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca5143994f4e4f40800000000000000
+      internalID: 5714592154601478863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_14
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 3709
+        width: 92
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48073e9c53f420980800000000000000
+      internalID: -8574203648121016188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_15
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 3704
+        width: 90
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fbb4cdfec7b31110800000000000000
+      internalID: 1230529222850952184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_16
+      rect:
+        serializedVersion: 2
+        x: 2291
+        y: 3575
+        width: 507
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c8bdc222fa47850800000000000000
+      internalID: 6373911933952429209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_17
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 3159
+        width: 320
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713206c2d99071210800000000000000
+      internalID: 1303521187806061335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_18
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 2811
+        width: 147
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd3dbc9c02035ca0800000000000000
+      internalID: -6029473222926451274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_19
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 2105
+        width: 360
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43c570759c0fcd60800000000000000
+      internalID: 7912556906289677131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_20
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 2050
+        width: 443
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5d80fba7b715950800000000000000
+      internalID: 6436061109610403244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1793
+        width: 284
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00075cee05a239c70800000000000000
+      internalID: 8976565009371197440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_22
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1183
+        width: 426
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e075d1e559b8bb0c0800000000000000
+      internalID: -4558896724137126130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_23
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 1108
+        width: 392
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0852132d7817fe3c0800000000000000
+      internalID: -4328115888718797440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_24
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 650
+        width: 160
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a288baef2a3f2a0800000000000000
+      internalID: -6704836205541316003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_25
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 605
+        width: 534
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa61472d5fc5c0c50800000000000000
+      internalID: 6632778562077464234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_26
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 601
+        width: 535
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36ec85c6afb37650800000000000000
+      internalID: 6229533432583349822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_27
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 640
+        width: 160
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bed169979e6658c0800000000000000
+      internalID: -4010896820734402893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cuteface3_28
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 0
+        width: 410
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5f4422e54c55e20800000000000000
+      internalID: 3338790607346005477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cuteface3_0: -2320431094216104145
+      cuteface3_1: 2411224540516186546
+      cuteface3_10: -3291274268377985982
+      cuteface3_11: 3540461979519164520
+      cuteface3_12: -6087041182694556084
+      cuteface3_13: 5714592154601478863
+      cuteface3_14: -8574203648121016188
+      cuteface3_15: 1230529222850952184
+      cuteface3_16: 6373911933952429209
+      cuteface3_17: 1303521187806061335
+      cuteface3_18: -6029473222926451274
+      cuteface3_19: 7912556906289677131
+      cuteface3_2: 1526946127525264708
+      cuteface3_20: 6436061109610403244
+      cuteface3_21: 8976565009371197440
+      cuteface3_22: -4558896724137126130
+      cuteface3_23: -4328115888718797440
+      cuteface3_24: -6704836205541316003
+      cuteface3_25: 6632778562077464234
+      cuteface3_26: 6229533432583349822
+      cuteface3_27: -4010896820734402893
+      cuteface3_28: 3338790607346005477
+      cuteface3_3: 4197730878737604522
+      cuteface3_4: -7984986264988165078
+      cuteface3_5: -3038396851691408923
+      cuteface3_6: -7306906799820607689
+      cuteface3_7: -1514073791531383791
+      cuteface3_8: -4855815749317327330
+      cuteface3_9: 7198413071006130371
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
