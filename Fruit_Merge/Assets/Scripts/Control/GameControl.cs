@@ -26,7 +26,7 @@ public class GameControl : MonoBehaviour
             zScreen = cam.WorldToScreenPoint(transform.position).z;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (TryGetPointerPosition(out Vector2 current))
         {
@@ -34,6 +34,7 @@ public class GameControl : MonoBehaviour
             {
                 dragging = true;
                 lastPointerPos = current;
+
                 return;
             }
 
@@ -54,6 +55,12 @@ public class GameControl : MonoBehaviour
         else
         {
             dragging = false;
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                if (GameManager.instance.SelectedFruit != null)
+                    GameManager.instance.SelectedFruit.GetComponent<Rigidbody2D>().gravityScale = 1;
+            }
         }
     }
 
@@ -88,7 +95,6 @@ public class GameControl : MonoBehaviour
             pos = Input.mousePosition;
             return true;
         }
-
         pos = default;
         return false;
     }

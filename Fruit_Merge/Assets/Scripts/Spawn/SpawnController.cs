@@ -2,25 +2,28 @@ using UnityEngine;
 
 public class SpawnController : MonoBehaviour
 {
+    public static SpawnController instance;
     public Transform spawnPosition;
 
-    private void Update()
+    private void Awake()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SpawnFruit();
-        }
+        if (instance == null) instance = this;
+        else Destroy(gameObject);
     }
-
-    void SpawnFruit()
+    private void Start()
+    {
+        SpawnFruit();
+    }
+    public void SpawnFruit()
     {
         int index = Random.Range(0, GameManager.instance.Fruits.Length);
         GameObject fruit = Instantiate(GameManager.instance.Fruits[index], spawnPosition.position, Quaternion.identity);
+        GameManager.instance.SelectedFruit = fruit;
 
         Rigidbody2D rb = fruit.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            rb.gravityScale = 1f;
+            rb.gravityScale = 0f;
         }
     }
 }
