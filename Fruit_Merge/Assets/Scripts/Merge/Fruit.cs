@@ -30,6 +30,10 @@ public class Fruit : MonoBehaviour
 
         Rigidbody2D rb = newFruit.GetComponent<Rigidbody2D>();
         if (rb != null) rb.gravityScale = 1f;
+
+        Destroy(newFruit.GetComponent<GameControl>()); 
+        SpawnController.instance.ReSelectFruit();
+
         yield return null;
 
         Destroy(other.gameObject);
