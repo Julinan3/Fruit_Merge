@@ -1,10 +1,10 @@
+using System.Collections;
 using UnityEngine;
 
 public class SpawnController : MonoBehaviour
 {
     public static SpawnController instance;
     public Transform spawnPosition;
-
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -24,6 +24,19 @@ public class SpawnController : MonoBehaviour
         if (rb != null)
         {
             rb.gravityScale = 0f;
+        }
+    }
+    public void ReSelectFruit()
+    {
+        StartCoroutine(Delay());
+    }
+
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.1f);
+        if (GameManager.instance.SelectedFruit == null)
+        {
+            SpawnFruit();
         }
     }
 }

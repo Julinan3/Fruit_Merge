@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class GameControl : MonoBehaviour
 {
@@ -14,8 +15,9 @@ public class GameControl : MonoBehaviour
     Rigidbody2D rb;
 
     bool dragging;
-    Vector2 lastPointerPos;         
+    Vector2 lastPointerPos;
 
+    private bool firstSpawn = true;
     void Awake()
     {
         cam = Camera.main;
@@ -25,7 +27,6 @@ public class GameControl : MonoBehaviour
         if (cam != null)
             zScreen = cam.WorldToScreenPoint(transform.position).z;
     }
-
     void Update()
     {
         if (TryGetPointerPosition(out Vector2 current))
@@ -55,13 +56,28 @@ public class GameControl : MonoBehaviour
         else
         {
             dragging = false;
-
-            if (Input.GetMouseButtonUp(0))
+        }
+        
+        if (!dragging && Input.GetMouseButtonUp(0))
+        {
+            GameManager.instance.SelectedFruit.GetComponent<Rigidbody2D>().gravityScale = 1;
+            if(!firstSpawn)
             {
-                if (GameManager.instance.SelectedFruit != null)
-                    GameManager.instance.SelectedFruit.GetComponent<Rigidbody2D>().gravityScale = 1;
+                StartCoroutine(WaitAndSpawn());
+            }
+            else
+            {
+                firstSpawn = false;
+                StartCoroutine(WaitAndSpawn());
             }
         }
+        
+    }
+    private IEnumerator WaitAndSpawn()
+    {
+        yield return new WaitForSeconds(1.5f);
+        SpawnController.instance.SpawnFruit();
+        Destroy(this);
     }
 
     void MoveHorizontally(float worldDx)
