@@ -22,9 +22,11 @@ public class ShrinkJoker : MonoBehaviour
                 Fruit fruit = hit.collider.GetComponent<Fruit>();
                 if (fruit != null)
                 {
-                    fruit.transform.localScale *= 0.9f;
+                    fruit.transform.localScale *= 0.5f;
                     Debug.Log("Shrink Joker uygulandý!");
                     isActive = false;
+                    JokerManager.JokerActive = false;
+                    gameObject.SetActive(false);
                 }
             }
         }

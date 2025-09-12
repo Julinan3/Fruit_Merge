@@ -2,9 +2,16 @@ using UnityEngine;
 
 public class JokerManager : MonoBehaviour
 {
+    public static bool JokerActive = false;
+
     public int shrinkCost = 50;
     public int bombCost = 100;
 
+
+    public void JokerActivateFunc()
+    {
+        JokerActive = true;
+    }
     public void UseShrinkJoker()
     {
         if (GameManager.instance.SpendCoin(shrinkCost))

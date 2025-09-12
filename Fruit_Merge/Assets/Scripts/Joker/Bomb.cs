@@ -44,6 +44,8 @@ public class Bomb : MonoBehaviour
 
         // Efekt ekle, sonra kendini yok et
         //Destroy(gameObject);
+        JokerManager.JokerActive = false;
+        gameObject.SetActive(false);
     }
 
     private void OnDrawGizmosSelected()
