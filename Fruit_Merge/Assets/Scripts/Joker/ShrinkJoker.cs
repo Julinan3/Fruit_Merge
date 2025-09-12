@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class ShrinkJoker : MonoBehaviour
 {
@@ -20,15 +21,21 @@ public class ShrinkJoker : MonoBehaviour
             if (hit.collider != null)
             {
                 Fruit fruit = hit.collider.GetComponent<Fruit>();
-                if (fruit != null)
+                if (fruit != null && fruit.gameObject != GameManager.instance.SelectedFruit)
                 {
                     fruit.transform.localScale *= 0.5f;
                     Debug.Log("Shrink Joker uygulandý!");
                     isActive = false;
-                    JokerManager.JokerActive = false;
-                    gameObject.SetActive(false);
+                    StartCoroutine(Delay());
                 }
             }
         }
+    }
+
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.1f);
+        JokerManager.JokerActive = false;
+        gameObject.SetActive(false);
     }
 }

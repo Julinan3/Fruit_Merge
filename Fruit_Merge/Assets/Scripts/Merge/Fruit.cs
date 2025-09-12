@@ -36,6 +36,8 @@ public class Fruit : MonoBehaviour
 
         yield return null;
 
+        GameManager.instance.AddCoin(scoreGain * 100);
+
         Destroy(other.gameObject);
         Destroy(this.gameObject);
     }

@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
@@ -11,7 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject SelectedFruit;
 
     public int coins = 0;
-    public UnityEngine.UI.Text coinText;
+    public TextMeshProUGUI coinText;
     private void Awake()
     {
         if (instance == null) instance = this;

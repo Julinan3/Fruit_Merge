@@ -59,7 +59,7 @@ public class GameControl : MonoBehaviour
             dragging = false;
         }
         
-        if (!dragging && Input.GetMouseButtonUp(0) && !EventSystem.current.IsPointerOverGameObject())
+        if (!dragging && Input.GetMouseButtonUp(0) && !EventSystem.current.IsPointerOverGameObject() && !JokerManager.JokerActive)
         {
             GameManager.instance.SelectedFruit.GetComponent<Rigidbody2D>().gravityScale = 1;
             if(!firstSpawn)
