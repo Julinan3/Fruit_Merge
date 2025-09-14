@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class GameControl : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class GameControl : MonoBehaviour
     {
         if (TryGetPointerPosition(out Vector2 current))
         {
-            if (!dragging)
+            if (!dragging && !JokerManager.JokerActive)
             {
                 dragging = true;
                 lastPointerPos = current;
@@ -58,7 +59,7 @@ public class GameControl : MonoBehaviour
             dragging = false;
         }
         
-        if (!dragging && Input.GetMouseButtonUp(0))
+        if (!dragging && Input.GetMouseButtonUp(0) && !EventSystem.current.IsPointerOverGameObject() && !JokerManager.JokerActive)
         {
             GameManager.instance.SelectedFruit.GetComponent<Rigidbody2D>().gravityScale = 1;
             if(!firstSpawn)
@@ -95,7 +96,7 @@ public class GameControl : MonoBehaviour
     bool TryGetPointerPosition(out Vector2 pos)
     {
         // Mobile
-        if (Input.touchCount > 0)
+        if (Input.touchCount > 0 && !EventSystem.current.IsPointerOverGameObject() && !JokerManager.JokerActive)
         {
             Touch t = Input.GetTouch(0);
             if (t.phase == TouchPhase.Moved || t.phase == TouchPhase.Stationary || t.phase == TouchPhase.Began)
@@ -106,7 +107,7 @@ public class GameControl : MonoBehaviour
         }
 
         // PC
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject() && !JokerManager.JokerActive)
         {
             pos = Input.mousePosition;
             return true;

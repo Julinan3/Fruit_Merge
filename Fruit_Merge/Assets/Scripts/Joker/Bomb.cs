@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Bomb : MonoBehaviour
@@ -5,9 +6,11 @@ public class Bomb : MonoBehaviour
     public float explosionRadius = 2f;
     private Vector3 offset;
     private bool isDragging = false;
+    private Vector3 DefaultPos;
 
     private void OnMouseDown()
     {
+        DefaultPos = gameObject.transform.position;
         // Mouse ile tuttuðunda offset al
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         offset = transform.position - new Vector3(mousePos.x, mousePos.y, 0f);
@@ -36,7 +39,7 @@ public class Bomb : MonoBehaviour
         foreach (Collider2D hit in hits)
         {
             Fruit fruit = hit.GetComponent<Fruit>();
-            if (fruit != null)
+            if (fruit != null && fruit.gameObject != GameManager.instance.SelectedFruit)
             {
                 Destroy(fruit.gameObject);
             }
@@ -44,6 +47,14 @@ public class Bomb : MonoBehaviour
 
         // Efekt ekle, sonra kendini yok et
         //Destroy(gameObject);
+        StartCoroutine(Delay());
+    }
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.1f);
+        transform.position = DefaultPos;
+        JokerManager.JokerActive = false;
+        gameObject.SetActive(false);
     }
 
     private void OnDrawGizmosSelected()
