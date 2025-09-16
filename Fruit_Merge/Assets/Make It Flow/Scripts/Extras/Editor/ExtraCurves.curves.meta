@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 876ae36a817346ac8872be4e344b459e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224499
+  packageName: Make It Flow - UGUI Events framework
+  packageVersion: 1.1.3
+  assetPath: Assets/Make It Flow/Scripts/Extras/Editor/ExtraCurves.curves
+  uploadId: 588796

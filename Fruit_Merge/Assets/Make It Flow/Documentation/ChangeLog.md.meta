@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ce83b3a2179138e678721f1fd09482a7
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224499
+  packageName: Make It Flow - UGUI Events framework
+  packageVersion: 1.1.3
+  assetPath: Assets/Make It Flow/Documentation/ChangeLog.md
+  uploadId: 588796

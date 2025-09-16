@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e874f4e4e6c3b2514b2aae8abac7a2d9
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224499
+  packageName: Make It Flow - UGUI Events framework
+  packageVersion: 1.1.3
+  assetPath: Assets/Make It Flow/Scenes/CompositionSamples.unity
+  uploadId: 588796

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fce0434268ed0f692a6d584a63beb826
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224499
+  packageName: Make It Flow - UGUI Events framework
+  packageVersion: 1.1.3
+  assetPath: Assets/Make It Flow/Prefabs/Canvas - MakeItFlow.prefab
+  uploadId: 588796

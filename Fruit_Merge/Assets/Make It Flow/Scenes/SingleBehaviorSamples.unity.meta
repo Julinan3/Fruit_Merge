@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 36391202d8ae09d30b5e0ba06717ff3f
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224499
+  packageName: Make It Flow - UGUI Events framework
+  packageVersion: 1.1.3
+  assetPath: Assets/Make It Flow/Scenes/SingleBehaviorSamples.unity
+  uploadId: 588796

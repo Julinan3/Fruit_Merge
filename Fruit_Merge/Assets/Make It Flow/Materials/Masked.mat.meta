@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aae312d1b45a54cad9dfe79183af43bb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224499
+  packageName: Make It Flow - UGUI Events framework
+  packageVersion: 1.1.3
+  assetPath: Assets/Make It Flow/Materials/Masked.mat
+  uploadId: 588796

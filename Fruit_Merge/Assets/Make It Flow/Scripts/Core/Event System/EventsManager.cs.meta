@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7136144e1111be333bca808d26e3ed89
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224499
+  packageName: Make It Flow - UGUI Events framework
+  packageVersion: 1.1.3
+  assetPath: Assets/Make It Flow/Scripts/Core/Event System/EventsManager.cs
+  uploadId: 588796
