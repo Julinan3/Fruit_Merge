@@ -3,8 +3,16 @@ using System.Collections;
 
 public class ShrinkJoker : MonoBehaviour
 {
+    public static ShrinkJoker instance;
+
     private bool isActive = false;
 
+
+    private void Awake()
+    {
+        if (instance == null) instance = this;
+        else Destroy(gameObject);
+    }
     public void Activate()
     {
         isActive = true;
@@ -13,7 +21,7 @@ public class ShrinkJoker : MonoBehaviour
 
     private void Update()
     {
-        //if (!isActive) return;
+        if (!isActive) return;
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -23,10 +31,10 @@ public class ShrinkJoker : MonoBehaviour
                 Fruit fruit = hit.collider.GetComponent<Fruit>();
                 if (fruit != null && fruit.gameObject != GameManager.instance.SelectedFruit)
                 {
-                    fruit.transform.localScale *= 0.5f;
+                    fruit.transform.localScale *= 0.9f;
                     Debug.Log("Shrink Joker uygulandý!");
                     isActive = false;
-                    StartCoroutine(Delay());
+                    //StartCoroutine(Delay());
                 }
             }
         }
