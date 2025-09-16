@@ -1,4 +1,4 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
@@ -11,33 +11,52 @@ public class GameManager : MonoBehaviour
 
     public GameObject SelectedFruit;
 
-    public int coins = 0;
-    public TextMeshProUGUI coinText;
+    public int Score = 0;
+    public TextMeshProUGUI ScoreText;
+
+    public int Coin = 0;
+    public TextMeshProUGUI CoinText;
+
+    private float displayedScore = 0;
+    private float increaseSpeed = 600f;
     private void Awake()
     {
         if (instance == null) instance = this;
         else Destroy(gameObject);
     }
-    public void AddCoin(int amount)
+    public void AddScore(int amount)
     {
-        coins += amount;
-        UpdateUI();
+        Score += amount;
     }
 
     public bool SpendCoin(int amount)
     {
-        if (coins >= amount)
+        if (Score >= amount)
         {
-            coins -= amount;
-            UpdateUI();
+            Score -= amount;
+            //UpdateUI();
             return true;
         }
         return false;
     }
 
+    private void Update()
+    {
+        if (displayedScore < Score)
+        {
+            displayedScore += increaseSpeed * Time.deltaTime;
+
+            if (displayedScore > Score)
+                displayedScore = Score;
+
+            ScoreText.text = Mathf.FloorToInt(displayedScore).ToString();
+        }
+    }
+    /*
     private void UpdateUI()
     {
         if (coinText != null)
-            coinText.text = "Coins: " + coins;
+            coinText.text = "" + coins;
     }
+    */
 }

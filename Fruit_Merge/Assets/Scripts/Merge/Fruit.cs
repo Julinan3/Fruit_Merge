@@ -4,7 +4,7 @@ using UnityEngine;
 public class Fruit : MonoBehaviour
 {
     public int level;
-    private bool isMerging = false;
+    [HideInInspector]public bool isMerging = false;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -31,12 +31,15 @@ public class Fruit : MonoBehaviour
         Rigidbody2D rb = newFruit.GetComponent<Rigidbody2D>();
         if (rb != null) rb.gravityScale = 1f;
 
-        Destroy(newFruit.GetComponent<GameControl>()); 
+        if(newFruit.GetComponent<GameControl>() != null)
+        {
+            Destroy(newFruit.GetComponent<GameControl>());
+        }
         SpawnController.instance.ReSelectFruit();
 
         yield return null;
 
-        GameManager.instance.AddCoin(scoreGain * 100);
+        GameManager.instance.AddScore(scoreGain * 10);
 
         Destroy(other.gameObject);
         Destroy(this.gameObject);
