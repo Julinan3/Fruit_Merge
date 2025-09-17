@@ -8,6 +8,9 @@ public class Bomb : MonoBehaviour
     private bool isDragging = false;
     private Vector3 DefaultPos;
 
+    public GameObject explosionEffect;
+    public SpriteRenderer Shine;
+
     private void OnMouseDown()
     {
         DefaultPos = gameObject.transform.position;
@@ -15,6 +18,7 @@ public class Bomb : MonoBehaviour
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         offset = transform.position - new Vector3(mousePos.x, mousePos.y, 0f);
         isDragging = true;
+        JokerManager.instance.BombJokerClick();
     }
 
     private void OnMouseDrag()
@@ -29,6 +33,7 @@ public class Bomb : MonoBehaviour
     private void OnMouseUp()
     {
         isDragging = false;
+        JokerManager.instance.isBombActive = false;
         Explode();
     }
 
@@ -45,17 +50,19 @@ public class Bomb : MonoBehaviour
             }
         }
 
-        // Efekt ekle, sonra kendini yok et
-        //Destroy(gameObject);
+        this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        Shine.enabled = false;
+        explosionEffect.SetActive(true);
+
         StartCoroutine(Delay());
     }
     private IEnumerator Delay()
     {
         print($"<color=#008000>Booooom!</color>");
-        yield return new WaitForSeconds(0.5f);
-        transform.position = DefaultPos;
+        yield return new WaitForSeconds(1f);
+        //transform.position = DefaultPos;
         JokerManager.JokerActive = false;
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
     private void OnDrawGizmosSelected()

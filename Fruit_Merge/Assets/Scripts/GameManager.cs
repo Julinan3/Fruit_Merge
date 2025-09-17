@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject SelectedFruit;
 
-    public int Score = 0;
+    public int Score = 10000;
     public TextMeshProUGUI ScoreText;
 
     public int Coin = 0;

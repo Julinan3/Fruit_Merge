@@ -3,20 +3,35 @@ using UnityEngine;
 
 public class JokerManager : MonoBehaviour
 {
+    public static JokerManager instance;
     public static bool JokerActive = false;
 
+    public bool isShrinkActive = false;
+    public bool isBombActive = false;
+    public bool isLvlUpActive = false;
+
     public int shrinkCost = 50;
-    public int bombCost = 100;
+    public int bombCost = 10;
     public int LvlUpCost = 150;
     public int SwapCost = 75;
     public int DestroyJokerCost = 85;
 
     public GameObject BombPrefab;
+    public GameObject BlackPanel;
 
+    private void Awake()
+    {
+        if (instance == null) instance = this;
+        else Destroy(gameObject);
+    }
 
     public void JokerActivateFunc()
     {
         JokerActive = true;
+    }
+    public void BombJokerClick()
+    {
+        BlackPanel.SetActive(false);
     }
     public void UseShrinkJoker()
     {
@@ -32,13 +47,14 @@ public class JokerManager : MonoBehaviour
 
     public void UseBombJoker()
     {
-        if (GameManager.instance.SpendCoin(bombCost))
+        if (/*GameManager.instance.SpendCoin(bombCost) &&*/ !isBombActive)
         {
+            isBombActive = true;
             ActivateBomb();
         }
         else
         {
-            ShowRewardedAd(() => ActivateBomb());
+            //ShowRewardedAd(() => ActivateBomb());
         }
     }
 
@@ -86,7 +102,9 @@ public class JokerManager : MonoBehaviour
 
     void ActivateBomb()
     {
-        GameObject bomb = Instantiate(BombPrefab, new Vector3(0, -3.5f, 0), Quaternion.identity);
+        BlackPanel.SetActive(true);
+        GameObject bomb = Instantiate(BombPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+
         print($"<color=#ffA500>Drag the bomb to the location where it will explode.</color>");
     }
 
