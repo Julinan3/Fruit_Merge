@@ -9,6 +9,7 @@ public class Bomb : MonoBehaviour
     private Vector3 DefaultPos;
 
     public GameObject explosionEffect;
+    public GameObject bombFuse;
     public SpriteRenderer Shine;
 
     private void OnMouseDown()
@@ -51,6 +52,7 @@ public class Bomb : MonoBehaviour
         }
 
         this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        bombFuse.SetActive(false);
         Shine.enabled = false;
         explosionEffect.SetActive(true);
 
