@@ -1,8 +1,5 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
-using UnityEngine.UI;
-
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -21,6 +18,9 @@ public class GameManager : MonoBehaviour
     private float increaseSpeed = 600f;
     private void Awake()
     {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 90;
+
         if (instance == null) instance = this;
         else Destroy(gameObject);
     }

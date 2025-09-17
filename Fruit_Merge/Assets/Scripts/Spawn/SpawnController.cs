@@ -18,6 +18,8 @@ public class SpawnController : MonoBehaviour
     {
         int index = Random.Range(0, 4);
         GameObject fruit = Instantiate(GameManager.instance.Fruits[index], spawnPosition.position, Quaternion.identity);
+        fruit.name = GameManager.instance.Fruits[index].name;
+
         GameManager.instance.SelectedFruit = fruit;
 
         Rigidbody2D rb = fruit.GetComponent<Rigidbody2D>();

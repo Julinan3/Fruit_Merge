@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class Fruit : MonoBehaviour
@@ -27,6 +28,7 @@ public class Fruit : MonoBehaviour
         int newLevel = Mathf.Min(level + 1, GameManager.instance.Fruits.Length - 1);
         int scoreGain = (int)Mathf.Pow(2, newLevel);
         GameObject newFruit = Instantiate(GameManager.instance.Fruits[newLevel], mergePos, Quaternion.identity);
+        newFruit.name = GameManager.instance.Fruits[newLevel].name;
 
         Rigidbody2D rb = newFruit.GetComponent<Rigidbody2D>();
         if (rb != null) rb.gravityScale = 1f;

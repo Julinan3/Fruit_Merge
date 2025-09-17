@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class JokerManager : MonoBehaviour
@@ -6,6 +7,9 @@ public class JokerManager : MonoBehaviour
 
     public int shrinkCost = 50;
     public int bombCost = 100;
+    public int LvlUpCost = 150;
+    public int SwapCost = 75;
+    public int DestroyJokerCost = 85;
 
     public GameObject BombPrefab;
 
@@ -38,18 +42,70 @@ public class JokerManager : MonoBehaviour
         }
     }
 
+    public void UseLvlUpJoker()
+    {
+        if (GameManager.instance.SpendCoin(LvlUpCost))
+        {
+            ActivateLvlUp();
+        }
+        else
+        {
+            ShowRewardedAd(() => ActivateLvlUp());
+        }
+    }
+
+    public void UseSwapJoker()
+    {
+        if (GameManager.instance.SpendCoin(SwapCost))
+        {
+            ActivateSwap();
+        }
+        else
+        {
+            ShowRewardedAd(() => ActivateSwap());
+        }
+    }
+
+    public void UseDestroyJoker()
+    {
+        if (GameManager.instance.SpendCoin(SwapCost))
+        {
+            ActivateDestroy();
+        }
+        else
+        {
+            ShowRewardedAd(() => ActivateDestroy());
+        }
+    }
+
     void ActivateShrink()
     {
-        Debug.Log("Shrink Joker kullanýldý!");
-
         ShrinkJoker.instance.Activate();
+        print($"<color=#ffA500>Select the fruit that will shrink in size.</color>");
     }
 
     void ActivateBomb()
     {
-        Debug.Log("Bomb Joker kullanýldý!");
-
         GameObject bomb = Instantiate(BombPrefab, new Vector3(0, -3.5f, 0), Quaternion.identity);
+        print($"<color=#ffA500>Drag the bomb to the location where it will explode.</color>");
+    }
+
+    void ActivateLvlUp()
+    {
+        LvlUpJoker.instance.Activate();
+        print($"<color=#ffA500>Select the fruit that will level up.</color>");
+    }
+
+    void ActivateSwap()
+    {
+        SwapJoker.instance.Activate();
+        print($"<color=#ffA500>Select 2 fruits to swap places.</color>");
+    }
+
+    void ActivateDestroy()
+    {
+        DestroyJoker.instance.Activate();
+        print($"<color=#ffA500>Select the fruit to be destroyed.</color>");
     }
 
     void ShowRewardedAd(System.Action onSuccess)

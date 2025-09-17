@@ -51,7 +51,8 @@ public class Bomb : MonoBehaviour
     }
     private IEnumerator Delay()
     {
-        yield return new WaitForSeconds(0.1f);
+        print($"<color=#008000>Booooom!</color>");
+        yield return new WaitForSeconds(0.5f);
         transform.position = DefaultPos;
         JokerManager.JokerActive = false;
         gameObject.SetActive(false);

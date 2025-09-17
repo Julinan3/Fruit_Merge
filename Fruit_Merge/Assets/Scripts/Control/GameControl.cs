@@ -19,6 +19,7 @@ public class GameControl : MonoBehaviour
     Vector2 lastPointerPos;
 
     private bool firstSpawn = true;
+    private bool releaseFruit = false;
     void Awake()
     {
         cam = Camera.main;
@@ -30,6 +31,11 @@ public class GameControl : MonoBehaviour
     }
     void Update()
     {
+        if (releaseFruit)
+        {
+            return;
+        }
+
         if (TryGetPointerPosition(out Vector2 current))
         {
             if (!dragging && !JokerManager.JokerActive)
@@ -61,6 +67,7 @@ public class GameControl : MonoBehaviour
         
         if (!dragging && Input.GetMouseButtonUp(0) && !EventSystem.current.IsPointerOverGameObject() && !JokerManager.JokerActive)
         {
+            releaseFruit = true;
             GameManager.instance.SelectedFruit.GetComponent<Rigidbody2D>().gravityScale = 1;
             if(!firstSpawn)
             {

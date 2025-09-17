@@ -1,9 +1,9 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
 
-public class ShrinkJoker : MonoBehaviour
+public class DestroyJoker : MonoBehaviour
 {
-    public static ShrinkJoker instance;
+    public static DestroyJoker instance;
 
     private bool isActive = false;
 
@@ -27,10 +27,9 @@ public class ShrinkJoker : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.collider != null)
             {
-                Fruit fruit = hit.collider.GetComponent<Fruit>();
-                if (fruit != null && fruit.gameObject != GameManager.instance.SelectedFruit)
-                {
-                    fruit.transform.localScale *= 0.9f;
+                if (hit.collider.gameObject != GameManager.instance.SelectedFruit)
+                {   
+                    Destroy(hit.collider.gameObject);
                     isActive = false;
                     StartCoroutine(Delay());
                 }
@@ -40,7 +39,7 @@ public class ShrinkJoker : MonoBehaviour
 
     private IEnumerator Delay()
     {
-        print($"<color=#008000>Do you need a magnifying glass?</color>");
+        print($"<color=#008000>Destroyed!</color>");
         yield return new WaitForSeconds(0.5f);
         JokerManager.JokerActive = false;
     }
