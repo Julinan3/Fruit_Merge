@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using DG.Tweening;
+using TMPro;
 using UnityEngine;
 public class GameManager : MonoBehaviour
 {
@@ -7,15 +8,25 @@ public class GameManager : MonoBehaviour
     public GameObject[] Fruits;
 
     public GameObject SelectedFruit;
-
+    [Space(20)]
+    [Header("Score")]
+    [Space(10)]
     public int Score = 10000;
     public TextMeshProUGUI ScoreText;
+    public DOTweenAnimation ScoreAnim;
+    public bool isShaking = false;
 
+    [Space(20)]
+    [Header("Coin")]
+    [Space(10)]
     public int Coin = 0;
     public TextMeshProUGUI CoinText;
 
+    [Space(20)]
+
     private float displayedScore = 0;
     private float increaseSpeed = 600f;
+
     private void Awake()
     {
         QualitySettings.vSyncCount = 0;
@@ -23,10 +34,18 @@ public class GameManager : MonoBehaviour
 
         if (instance == null) instance = this;
         else Destroy(gameObject);
+
+    }
+    private void Start()
+    {
+        ScoreAnim.tween.SetAutoKill(false);
+        ScoreAnim.tween.Pause();
     }
     public void AddScore(int amount)
     {
         Score += amount;
+        ScoreAnim.DORestart();
+        isShaking = true;
     }
 
     public bool SpendCoin(int amount)
@@ -46,17 +65,20 @@ public class GameManager : MonoBehaviour
         {
             displayedScore += increaseSpeed * Time.deltaTime;
 
-            if (displayedScore > Score)
+            if (displayedScore >= Score) // eşitlik kontrolü toleranslı
+            {
                 displayedScore = Score;
+
+                // burada artık animasyonu durdurabilirsin
+                if (isShaking)
+                {
+                    ScoreAnim.tween.Pause();
+                    ScoreText.transform.localScale = Vector3.one;
+                    isShaking = false;
+                }
+            }
 
             ScoreText.text = Mathf.FloorToInt(displayedScore).ToString();
         }
     }
-    /*
-    private void UpdateUI()
-    {
-        if (coinText != null)
-            coinText.text = "" + coins;
-    }
-    */
 }

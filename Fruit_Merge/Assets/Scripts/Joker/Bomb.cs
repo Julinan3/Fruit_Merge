@@ -15,7 +15,6 @@ public class Bomb : MonoBehaviour
     private void OnMouseDown()
     {
         DefaultPos = gameObject.transform.position;
-        // Mouse ile tuttuðunda offset al
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         offset = transform.position - new Vector3(mousePos.x, mousePos.y, 0f);
         isDragging = true;
@@ -25,8 +24,6 @@ public class Bomb : MonoBehaviour
     private void OnMouseDrag()
     {
         if (!isDragging) return;
-
-        // Mouse’u takip et
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector3(mousePos.x, mousePos.y, 0f) + offset;
     }
@@ -51,10 +48,11 @@ public class Bomb : MonoBehaviour
             }
         }
 
-        this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-        bombFuse.SetActive(false);
-        Shine.enabled = false;
-        explosionEffect.SetActive(true);
+        var sr = GetComponent<SpriteRenderer>();
+        if (sr != null) sr.enabled = false;
+        if (bombFuse != null) bombFuse.SetActive(false);
+        if (Shine != null) Shine.enabled = false;
+        if (explosionEffect != null) explosionEffect.SetActive(true);
 
         StartCoroutine(Delay());
     }

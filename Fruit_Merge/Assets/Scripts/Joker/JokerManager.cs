@@ -6,16 +6,25 @@ public class JokerManager : MonoBehaviour
     public static JokerManager instance;
     public static bool JokerActive = false;
 
+    [Space(20)]
+    [Header("Joker States")]
+    [Space(10)]
     public bool isShrinkActive = false;
     public bool isBombActive = false;
     public bool isLvlUpActive = false;
 
+    [Space(20)]
+    [Header("Joker Costs")]
+    [Space(10)]
     public int shrinkCost = 50;
     public int bombCost = 10;
     public int LvlUpCost = 150;
     public int SwapCost = 75;
     public int DestroyJokerCost = 85;
 
+    [Space(20)]
+    [Header("Joker Prefabs")]
+    [Space(10)]
     public GameObject BombPrefab;
     public GameObject BlackPanel;
 
