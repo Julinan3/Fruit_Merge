@@ -28,7 +28,7 @@ public class LvlUpJoker : MonoBehaviour
             if (hit.collider != null)
             {
                 int FruitIndex = int.Parse(hit.collider.name);
-                if (hit.collider.gameObject != GameManager.instance.SelectedFruit && hit.collider.gameObject.name != "11")
+                if (hit.collider.gameObject != GameManager.instance.SelectedFruit && hit.collider.gameObject.name != "11" && hit.collider.gameObject.GetComponent<Fruit>() != null)
                 {
                     GameObject lvlUpedFruit = Instantiate(GameManager.instance.Fruits[FruitIndex], hit.collider.transform.position, Quaternion.identity);
                     lvlUpedFruit.name = GameManager.instance.Fruits[FruitIndex].name;

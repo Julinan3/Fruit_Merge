@@ -27,7 +27,7 @@ public class SwapJoker : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.collider != null)
             {
-                if (hit.collider.gameObject != GameManager.instance.SelectedFruit && selectedFruit1 == null)
+                if (hit.collider.gameObject != GameManager.instance.SelectedFruit && selectedFruit1 == null && hit.collider.gameObject.GetComponent<Fruit>() != null)
                 {
                     selectedFruit1 = hit.collider.gameObject;
                 }

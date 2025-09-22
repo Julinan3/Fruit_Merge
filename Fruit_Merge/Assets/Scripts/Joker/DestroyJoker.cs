@@ -27,7 +27,7 @@ public class DestroyJoker : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.collider != null)
             {
-                if (hit.collider.gameObject != GameManager.instance.SelectedFruit)
+                if (hit.collider.gameObject != GameManager.instance.SelectedFruit && hit.collider.gameObject.GetComponent<Fruit>() != null)
                 {   
                     Destroy(hit.collider.gameObject);
                     isActive = false;
