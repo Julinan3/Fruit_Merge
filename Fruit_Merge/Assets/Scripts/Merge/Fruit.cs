@@ -5,7 +5,14 @@ using UnityEngine;
 public class Fruit : MonoBehaviour
 {
     public int level;
+    private AudioSource mergeSound;
+    [SerializeField] private GameObject[] mergeEffects;
     [HideInInspector]public bool isMerging = false;
+
+    private void Awake()
+    {
+        mergeSound = GetComponent<AudioSource>();
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -29,6 +36,10 @@ public class Fruit : MonoBehaviour
         int scoreGain = (int)Mathf.Pow(2, newLevel);
         GameObject newFruit = Instantiate(GameManager.instance.Fruits[newLevel], mergePos, Quaternion.identity);
         newFruit.name = GameManager.instance.Fruits[newLevel].name;
+
+        GameManager.instance.PlayMergeSound(mergeSound);
+
+        GameObject efect = Instantiate(mergeEffects[level], transform.position, Quaternion.identity);
 
         Rigidbody2D rb = newFruit.GetComponent<Rigidbody2D>();
         if (rb != null) rb.gravityScale = 1f;
