@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour
     private float displayedScore = 0;
     private float increaseSpeed = 600f;
 
+    [Space(20)]
+    [Header("Merge Sound")]
+    public AudioSource mergeSound;
+
     private void Awake()
     {
         QualitySettings.vSyncCount = 0;
@@ -34,6 +38,8 @@ public class GameManager : MonoBehaviour
 
         if (instance == null) instance = this;
         else Destroy(gameObject);
+
+        mergeSound = GetComponent<AudioSource>();
 
     }
     private void Start()
@@ -57,6 +63,16 @@ public class GameManager : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    public void PlayMergeSound(AudioSource source)
+    {
+        if (mergeSound != null && source != null)
+        {
+            mergeSound.clip = source.clip;
+            mergeSound.pitch = Random.Range(0.8f, 1.2f);
+            mergeSound.Play();
+        }
     }
 
     private void Update()
