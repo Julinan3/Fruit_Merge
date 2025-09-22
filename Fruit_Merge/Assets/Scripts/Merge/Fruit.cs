@@ -40,6 +40,8 @@ public class Fruit : MonoBehaviour
         GameManager.instance.PlayMergeSound(mergeSound);
 
         GameObject efect = Instantiate(mergeEffects[level], transform.position, Quaternion.identity);
+        float efectscale = 2f + (level * 0.4f);
+        efect.transform.localScale = Vector3.one * efectscale;
 
         Rigidbody2D rb = newFruit.GetComponent<Rigidbody2D>();
         if (rb != null) rb.gravityScale = 1f;
