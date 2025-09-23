@@ -23133,8 +23133,11 @@ MonoBehaviour:
   SelectedFruit: {fileID: 0}
   Score: 0
   ScoreText: {fileID: 0}
+  ScoreAnim: {fileID: 0}
+  isShaking: 0
   Coin: 0
   CoinText: {fileID: 0}
+  mergeSound: {fileID: 0}
 --- !u!4 &1254906686
 Transform:
   m_ObjectHideFlags: 0
@@ -27673,6 +27676,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782104766}
   m_CullTransparentMesh: 1
+--- !u!1 &1796447176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1796447178}
+  - component: {fileID: 1796447177}
+  m_Layer: 0
+  m_Name: Ads
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1796447177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796447176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a43502a47ee224e831599c60cb0dc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RewardedAdManager
+  rewardedAdUnitIds:
+  - rawhye9em3ns82tt
+  - qlg5ztarup808t8h
+  - xuyfd7fwjgxsuwf1
+  - gnzyhda5b7ocskhj
+  - 13d49tvlhymjw197
+  - pi2ri7krzlzavk0k
+  - ble7vs5rddwe5ute
+  bannerAdUnitId: 5ewc3mmlzz5yhie6
+  interstitialAdUnitId: 4fplb2wfxs1jnk5w
+--- !u!4 &1796447178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796447176}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1798280418
 GameObject:
   m_ObjectHideFlags: 0
@@ -28057,6 +28114,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bomb
   explosionRadius: 2
+  explosionEffect: {fileID: 0}
+  bombFuse: {fileID: 0}
+  Shine: {fileID: 0}
 --- !u!4 &1832583898
 Transform:
   m_ObjectHideFlags: 0
@@ -30562,3 +30622,4 @@ SceneRoots:
   - {fileID: 921221833}
   - {fileID: 775881530}
   - {fileID: 1240173620}
+  - {fileID: 1796447178}
