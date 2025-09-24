@@ -61,7 +61,8 @@ public class Bomb : MonoBehaviour
         print($"<color=#008000>Booooom!</color>");
         yield return new WaitForSeconds(1f);
         //transform.position = DefaultPos;
-        JokerManager.JokerActive = false;
+        JokerManager.instance.SetJokerActive();
+        JokerManager.instance.ResetButtonRaycastTarget();
         Destroy(gameObject);
     }
 

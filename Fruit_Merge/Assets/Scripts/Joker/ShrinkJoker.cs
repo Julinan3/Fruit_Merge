@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ShrinkJoker : MonoBehaviour
 {
@@ -15,7 +16,14 @@ public class ShrinkJoker : MonoBehaviour
     }
     public void Activate()
     {
-        isActive = true;
+        if (!isActive)
+        {
+            isActive = true;
+        }
+        else if (isActive)
+        {
+            isActive = false;
+        }
     }
 
     private void Update()
@@ -25,7 +33,7 @@ public class ShrinkJoker : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit.collider != null)
+            if (hit.collider != null && !EventSystem.current.IsPointerOverGameObject())
             {
                 Fruit fruit = hit.collider.GetComponent<Fruit>();
                 if (fruit != null && fruit.gameObject != GameManager.instance.SelectedFruit)
@@ -42,6 +50,7 @@ public class ShrinkJoker : MonoBehaviour
     {
         print($"<color=#008000>Do you need a magnifying glass?</color>");
         yield return new WaitForSeconds(0.5f);
-        JokerManager.JokerActive = false;
+        JokerManager.instance.SetJokerActive();
+        JokerManager.instance.ResetButtonRaycastTarget();
     }
 }

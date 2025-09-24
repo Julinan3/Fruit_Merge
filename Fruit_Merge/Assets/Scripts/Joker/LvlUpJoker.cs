@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class LvlUpJoker : MonoBehaviour
 {
@@ -15,7 +16,14 @@ public class LvlUpJoker : MonoBehaviour
     }
     public void Activate()
     {
-        isActive = true;
+        if (!isActive)
+        {
+            isActive = true;
+        }
+        else if (isActive)
+        {
+            isActive = false;
+        }
     }
 
     private void Update()
@@ -25,11 +33,12 @@ public class LvlUpJoker : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit.collider != null)
+            if (hit.collider != null && !EventSystem.current.IsPointerOverGameObject())
             {
-                int FruitIndex = int.Parse(hit.collider.name);
                 if (hit.collider.gameObject != GameManager.instance.SelectedFruit && hit.collider.gameObject.name != "11" && hit.collider.gameObject.GetComponent<Fruit>() != null)
                 {
+                    int FruitIndex = int.Parse(hit.collider.name);
+
                     GameObject lvlUpedFruit = Instantiate(GameManager.instance.Fruits[FruitIndex], hit.collider.transform.position, Quaternion.identity);
                     lvlUpedFruit.name = GameManager.instance.Fruits[FruitIndex].name;
 
@@ -54,6 +63,7 @@ public class LvlUpJoker : MonoBehaviour
     {
         print($"<color=#008000>Now more powerful.</color>");
         yield return new WaitForSeconds(0.5f);
-        JokerManager.JokerActive = false;
+        JokerManager.instance.SetJokerActive();
+        JokerManager.instance.ResetButtonRaycastTarget();
     }
 }

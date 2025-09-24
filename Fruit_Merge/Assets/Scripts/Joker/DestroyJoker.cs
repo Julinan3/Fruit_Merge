@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class DestroyJoker : MonoBehaviour
 {
@@ -15,7 +16,14 @@ public class DestroyJoker : MonoBehaviour
     }
     public void Activate()
     {
-        isActive = true;
+        if (!isActive)
+        {
+            isActive = true;
+        }
+        else if (isActive)
+        {
+            isActive = false;
+        }
     }
 
     private void Update()
@@ -25,7 +33,7 @@ public class DestroyJoker : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit.collider != null)
+            if (hit.collider != null && !EventSystem.current.IsPointerOverGameObject())
             {
                 if (hit.collider.gameObject != GameManager.instance.SelectedFruit && hit.collider.gameObject.GetComponent<Fruit>() != null)
                 {   
@@ -41,6 +49,7 @@ public class DestroyJoker : MonoBehaviour
     {
         print($"<color=#008000>Destroyed!</color>");
         yield return new WaitForSeconds(0.5f);
-        JokerManager.JokerActive = false;
+        JokerManager.instance.SetJokerActive();
+        JokerManager.instance.ResetButtonRaycastTarget();
     }
 }

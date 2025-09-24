@@ -1,5 +1,6 @@
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class JokerManager : MonoBehaviour
 {
@@ -28,13 +29,28 @@ public class JokerManager : MonoBehaviour
     public GameObject BombPrefab;
     public GameObject BlackPanel;
 
+
+    public Image ShrinkJokerButton;
+    public Image BombJokerButton;
+    public Image LvlUpJokerButton;
+    public Image SwapJokerButton;
+    public Image DestroyJokerButton;
+
     private void Awake()
     {
         if (instance == null) instance = this;
         else Destroy(gameObject);
     }
+    public void ResetButtonRaycastTarget()
+    {
+        ShrinkJokerButton.raycastTarget = true;
+        BombJokerButton.raycastTarget = true;
+        LvlUpJokerButton.raycastTarget = true;
+        SwapJokerButton.raycastTarget = true;
+        DestroyJokerButton.raycastTarget = true;
+    }
 
-    public void JokerActivateFunc()
+    public void SetJokerActive()
     {
         JokerActive = true;
     }
@@ -44,6 +60,7 @@ public class JokerManager : MonoBehaviour
     }
     public void UseShrinkJoker()
     {
+        /*
         if (GameManager.instance.SpendCoin(shrinkCost))
         {
             ActivateShrink();
@@ -52,6 +69,8 @@ public class JokerManager : MonoBehaviour
         {
             ShowRewardedAd(() => ActivateShrink());
         }
+        */
+        ActivateShrink();
     }
 
     public void UseBombJoker()
@@ -69,6 +88,7 @@ public class JokerManager : MonoBehaviour
 
     public void UseLvlUpJoker()
     {
+        /*
         if (GameManager.instance.SpendCoin(LvlUpCost))
         {
             ActivateLvlUp();
@@ -77,10 +97,13 @@ public class JokerManager : MonoBehaviour
         {
             ShowRewardedAd(() => ActivateLvlUp());
         }
+        */
+        ActivateLvlUp();
     }
 
     public void UseSwapJoker()
     {
+        /*
         if (GameManager.instance.SpendCoin(SwapCost))
         {
             ActivateSwap();
@@ -89,10 +112,13 @@ public class JokerManager : MonoBehaviour
         {
             ShowRewardedAd(() => ActivateSwap());
         }
+        */
+        ActivateSwap();
     }
 
     public void UseDestroyJoker()
     {
+        /*
         if (GameManager.instance.SpendCoin(SwapCost))
         {
             ActivateDestroy();
@@ -101,16 +127,28 @@ public class JokerManager : MonoBehaviour
         {
             ShowRewardedAd(() => ActivateDestroy());
         }
+        */
+        ActivateDestroy();
     }
 
     void ActivateShrink()
     {
+        BombJokerButton.raycastTarget = false;
+        LvlUpJokerButton.raycastTarget = false;
+        SwapJokerButton.raycastTarget = false;
+        DestroyJokerButton.raycastTarget = false;
+
         ShrinkJoker.instance.Activate();
         print($"<color=#ffA500>Select the fruit that will shrink in size.</color>");
     }
 
     void ActivateBomb()
     {
+        ShrinkJokerButton.raycastTarget = false;
+        LvlUpJokerButton.raycastTarget = false;
+        SwapJokerButton.raycastTarget = false;
+        DestroyJokerButton.raycastTarget = false;
+
         BlackPanel.SetActive(true);
         GameObject bomb = Instantiate(BombPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 
@@ -119,18 +157,33 @@ public class JokerManager : MonoBehaviour
 
     void ActivateLvlUp()
     {
+        ShrinkJokerButton.raycastTarget = false;
+        BombJokerButton.raycastTarget = false;
+        SwapJokerButton.raycastTarget = false;
+        DestroyJokerButton.raycastTarget = false;
+
         LvlUpJoker.instance.Activate();
         print($"<color=#ffA500>Select the fruit that will level up.</color>");
     }
 
     void ActivateSwap()
     {
+        ShrinkJokerButton.raycastTarget = false;
+        BombJokerButton.raycastTarget = false;
+        LvlUpJokerButton.raycastTarget = false;
+        DestroyJokerButton.raycastTarget = false;
+
         SwapJoker.instance.Activate();
         print($"<color=#ffA500>Select 2 fruits to swap places.</color>");
     }
 
     void ActivateDestroy()
     {
+        ShrinkJokerButton.raycastTarget = false;
+        BombJokerButton.raycastTarget = false;
+        LvlUpJokerButton.raycastTarget = false;
+        SwapJokerButton.raycastTarget = false;
+
         DestroyJoker.instance.Activate();
         print($"<color=#ffA500>Select the fruit to be destroyed.</color>");
     }

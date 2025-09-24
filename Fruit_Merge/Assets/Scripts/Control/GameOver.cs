@@ -12,22 +12,23 @@ public class GameOver : MonoBehaviour
 
     private void Start()
     {
+        Physics2D.callbacksOnDisable = false;
         gameOverTriggered = false;
     }
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.GetComponent<Fruit>() != null && !gameOverTriggered)
+        bool isRealExitFromSpecificObject = !Physics2D.IsTouching(GetComponent<Collider2D>(), col);
+        if (isRealExitFromSpecificObject)
         {
-            if (col.GetComponent<Fruit>().isMerging)
+            if (col.GetComponent<Fruit>() != null && !gameOverTriggered)
             {
-                return;
-            }
-            gameOverTriggered = true;
-            Debug.Log("Game Over!!! " + col.gameObject.name);
-            GameOverUI.SetActive(true);
+                gameOverTriggered = true;
+                Debug.Log("Game Over!!! " + col.gameObject.name);
+                GameOverUI.SetActive(true);
 
-            ScoreText.text = "" + GameManager.instance.Score.ToString();
-            CoinRewardText.text = "" + (GameManager.instance.Score / 5).ToString();
+                ScoreText.text = "" + GameManager.instance.Score.ToString();
+                CoinRewardText.text = "" + (GameManager.instance.Score / 5).ToString();
+            }
         }
     }
 }
