@@ -14,13 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Localization-Asset-Tables-Turkish (Turkey) (tr-TR)
   m_GUID: 3b900981302de1b4f8c45da7020cb80f
-  m_SerializeEntries:
-  - m_GUID: a9fcb7adaa7770142a2ddb28afc246c4
-    m_Address: FontTableCollection_tr-TR
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-tr-TR
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 7a56635f64ea8934087d908f9264bdb1, type: 2}
   m_SchemaSet:

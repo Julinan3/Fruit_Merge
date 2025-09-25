@@ -14,13 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Localization-Asset-Tables-Hindi (hi)
   m_GUID: 8e6918ee88022ba42ba0763d3ed867b3
-  m_SerializeEntries:
-  - m_GUID: ed052d117de96a544afe9be64654105f
-    m_Address: FontTableCollection_hi
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-hi
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 7a56635f64ea8934087d908f9264bdb1, type: 2}
   m_SchemaSet:

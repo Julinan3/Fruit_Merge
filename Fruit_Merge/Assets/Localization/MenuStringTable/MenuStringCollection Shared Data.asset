@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: MenuStringCollection Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: MenuStringCollection
+  m_TableCollectionNameGuidString: 082fab4707c3cfc4ca9877ff59cdfe2a
+  m_Entries:
+  - m_Id: 627840008192
+    m_Key: Key_Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 677026611200
+    m_Key: Key_Missions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 751584559104
+    m_Key: Key_Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 799831638016
+    m_Key: Key_Shop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837244829696
+    m_Key: Key_Jokers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228098229288960
+    m_Key: Key_League
+    m_Metadata:
+      m_Items: []
+  - m_Id: 339886216200192
+    m_Key: Key_Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 343995417772032
+    m_Key: Key_Settings
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7724455676853616928
+  references:
+    version: 2
+    RefIds:
+    - rid: 7724455676853616928
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1758747804769

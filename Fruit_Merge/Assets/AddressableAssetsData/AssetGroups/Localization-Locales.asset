@@ -16,79 +16,79 @@ MonoBehaviour:
   m_GUID: 5cff039c5af540e41936fd42d765c6db
   m_SerializeEntries:
   - m_GUID: 059d5da04b7d43c429bffff5708a0679
-    m_Address: Arabic (ar)
+    m_Address: Arabic
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 184e99af38fbcfd4b9b8d4777ff8aa7e
-    m_Address: Chinese (Simplified) (zh)
+    m_Address: Chinese
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1fd8c9743d9f7c945a0b2cfb717a4f35
-    m_Address: French (fr)
+    m_Address: French
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 41afb3b92f90c9c4689095778b62ed0a
-    m_Address: Japanese (Japan) (ja-JP)
+    m_Address: Japanese
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4b539616889f01748b47fe6f4921eb78
-    m_Address: Hindi (hi)
+    m_Address: Hindi
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6ece28487ccd8864dabfdca2801d893c
-    m_Address: Spanish (es)
+    m_Address: Spanish
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 870610e2b513ef44fb134084c70447c4
-    m_Address: Italian (it)
+    m_Address: Italian
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 973463068594f9b46b81ec58f69cc29c
-    m_Address: English (en)
+    m_Address: English
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9de266237e148674188b9c6e3bfc58d7
-    m_Address: Korean (South Korea) (ko-KR)
+    m_Address: Korean
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a2c8d9435d3a4d74cbb7395b0a203e4e
-    m_Address: Turkish (Turkey) (tr-TR)
+    m_Address: Turkish
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cf2a8e8b820b0094b87e1e1ba8d611f5
-    m_Address: German (de)
+    m_Address: German
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d255451c53372164fa4fa0192072116a
-    m_Address: Russian (ru)
+    m_Address: Russian
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e1d3ec07cebe039499c05e7c401140e1
-    m_Address: Portuguese (pt)
+    m_Address: Portuguese
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
