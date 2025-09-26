@@ -14,7 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Localization-String-Tables-Arabic (ar)
   m_GUID: 36fbf2764bf1b2b448b7c921e3337b27
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 9e2da9ef4f47a234192f0d20dbba75a1
+    m_Address: MenuStringCollection_ar
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ar
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 7a56635f64ea8934087d908f9264bdb1, type: 2}
   m_SchemaSet:
