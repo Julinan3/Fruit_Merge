@@ -5,7 +5,6 @@ public class MainMenuManager : MonoBehaviour
     public static MainMenuManager Instance;
 
     [HideInInspector]public int SelectedPanelIndex = 0;
-    public GameObject[] Panels; // 0: Main, 1: Rank, 2: Shop, 3: Settings
     public ScaleAnimation[] SelectAnimations;
     private void Awake()
     {
@@ -17,25 +16,18 @@ public class MainMenuManager : MonoBehaviour
         SelectAnimations[0].StartSelectAnimation();
         SelectAnimations[SelectedPanelIndex].StartUnSelectAnimation();
         SelectedPanelIndex = 0;
-
-        Panels[1].SetActive(false);
     }
-    public void OpenRankMenu()
-    {
-        
-    }
-
     public void OpenShopMenu()
     {
         SelectAnimations[1].StartSelectAnimation();
         SelectAnimations[SelectedPanelIndex].StartUnSelectAnimation();
         SelectedPanelIndex = 1;
     }
-
-    public void OpenSettingsMenu()
+    public void OpenJokerMenu()
     {
-        //Listeye Eklenmedi
-        Panels[3].SetActive(false);
+        SelectAnimations[2].StartSelectAnimation();
+        SelectAnimations[SelectedPanelIndex].StartUnSelectAnimation();
+        SelectedPanelIndex = 2;
     }
 
     public void StartGameDefault()
