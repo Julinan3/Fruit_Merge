@@ -18,7 +18,7 @@ public class LocalizationManager : MonoBehaviour
     [SerializeField] private Button _arabicButton;
     [SerializeField] private Button _hindicButton;
 
-
+    
     private void Awake()
     {
         _englishButton.onClick.AddListener(() => SetLanguage(E_Language.English));
