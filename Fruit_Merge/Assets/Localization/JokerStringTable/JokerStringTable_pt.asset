@@ -17,7 +17,47 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: b951456eca843b347aef3e5576b203f8, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 17887543296
+    m_Localized: Bomba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74359652352
+    m_Localized: "Precis\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77647986688
+    m_Localized: Encolher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80370089984
+    m_Localized: Trocar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 292564123648
+    m_Localized: "Subir de n\xEDvel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 341285158912
+    m_Localized: "Explode todas as frutas em uma determinada \xE1rea."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 476442411008
+    m_Localized: "Explode um \xFAnico alvo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 547212902400
+    m_Localized: Encolhe o alvo selecionado.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 549591072768
+    m_Localized: Troca os lugares dos dois alvos selecionados.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 560429154304
+    m_Localized: Atualiza o alvo selecionado.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

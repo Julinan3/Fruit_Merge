@@ -38,6 +38,26 @@ MonoBehaviour:
     m_Localized: Level Up
     m_Metadata:
       m_Items: []
+  - m_Id: 341285158912
+    m_Localized: Explodes all fruits in a certain area.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 476442411008
+    m_Localized: Explodes a single target.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 547212902400
+    m_Localized: Shrinks the selected target.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 549591072768
+    m_Localized: Switches the positions of two selected targets.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 560429154304
+    m_Localized: Upgrades the selected target.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

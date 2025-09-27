@@ -17,7 +17,47 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: b951456eca843b347aef3e5576b203f8, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 17887543296
+    m_Localized: Bombe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74359652352
+    m_Localized: "Pr\xE9cision"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77647986688
+    m_Localized: "R\xE9tr\xE9cir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80370089984
+    m_Localized: Changer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 292564123648
+    m_Localized: Monter de niveau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 341285158912
+    m_Localized: "Fait exploser tous les fruits dans une zone donn\xE9e."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 476442411008
+    m_Localized: Fait exploser une seule cible.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 547212902400
+    m_Localized: "R\xE9duit la cible s\xE9lectionn\xE9e."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 549591072768
+    m_Localized: "Change les emplacements des deux cibles s\xE9lectionn\xE9es."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 560429154304
+    m_Localized: "Am\xE9liore la cible s\xE9lectionn\xE9e."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

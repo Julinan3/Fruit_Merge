@@ -17,7 +17,47 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: b951456eca843b347aef3e5576b203f8, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 17887543296
+    m_Localized: Bomba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74359652352
+    m_Localized: Precisione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77647986688
+    m_Localized: Restringere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80370089984
+    m_Localized: Interruttore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 292564123648
+    m_Localized: Salire di livello
+    m_Metadata:
+      m_Items: []
+  - m_Id: 341285158912
+    m_Localized: Fa esplodere tutti i frutti in una determinata area.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 476442411008
+    m_Localized: Fa esplodere un singolo bersaglio.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 547212902400
+    m_Localized: Rimpicciolisce il bersaglio selezionato.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 549591072768
+    m_Localized: Scambia le posizioni dei due bersagli selezionati.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 560429154304
+    m_Localized: Potenzia il bersaglio selezionato.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

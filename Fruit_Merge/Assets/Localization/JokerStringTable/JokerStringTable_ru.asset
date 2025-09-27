@@ -17,7 +17,53 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: b951456eca843b347aef3e5576b203f8, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 17887543296
+    m_Localized: "\u0411\u043E\u043C\u0431\u0430"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74359652352
+    m_Localized: "\u0422\u043E\u0447\u043D\u043E\u0441\u0442\u044C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77647986688
+    m_Localized: "\u0421\u0436\u0430\u0442\u044C\u0441\u044F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80370089984
+    m_Localized: "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0442\u0435\u043B\u044C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 292564123648
+    m_Localized: "\u041F\u043E\u0432\u044B\u0441\u0438\u0442\u044C \u0443\u0440\u043E\u0432\u0435\u043D\u044C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 341285158912
+    m_Localized: "\u0412\u0437\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u0435
+      \u0444\u0440\u0443\u043A\u0442\u044B \u0432 \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u043E\u0439
+      \u043E\u0431\u043B\u0430\u0441\u0442\u0438."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 476442411008
+    m_Localized: "\u0412\u0437\u0440\u044B\u0432\u0430\u0435\u0442 \u043E\u0434\u043D\u0443
+      \u0446\u0435\u043B\u044C."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 547212902400
+    m_Localized: "\u0423\u043C\u0435\u043D\u044C\u0448\u0430\u0435\u0442 \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u0443\u044E
+      \u0446\u0435\u043B\u044C."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 549591072768
+    m_Localized: "\u041C\u0435\u043D\u044F\u0435\u0442 \u043C\u0435\u0441\u0442\u0430\u043C\u0438
+      \u0434\u0432\u0430 \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u044B\u0445 \u043E\u0431\u044A\u0435\u043A\u0442\u0430."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 560429154304
+    m_Localized: "\u0423\u043B\u0443\u0447\u0448\u0430\u0435\u0442 \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u0443\u044E
+      \u0446\u0435\u043B\u044C."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
