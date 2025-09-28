@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Spanish
   m_GUID: 700e8e94557fba8469c7338d28ae8fde
   m_SerializeEntries:
+  - m_GUID: 1bd11dde660cb99428fa3cd5a3187195
+    m_Address: ShopStringCollection_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 36f16e617e61d874a92acadb902a381f
     m_Address: JokerStringTable_es
     m_ReadOnly: 1

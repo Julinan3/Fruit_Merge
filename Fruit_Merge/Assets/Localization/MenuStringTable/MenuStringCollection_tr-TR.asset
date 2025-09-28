@@ -50,6 +50,18 @@ MonoBehaviour:
     m_Localized: Ayarlar
     m_Metadata:
       m_Items: []
+  - m_Id: 1479395423174656
+    m_Localized: "G\xFCnl\xFCk \xD6d\xFCl"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1479401630744576
+    m_Localized: "G\xFCnl\xFCk \xC7evirme"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1479529473130496
+    m_Localized: "G\xF6revler"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
