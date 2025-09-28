@@ -47,6 +47,18 @@ MonoBehaviour:
     m_Key: Key_Settings
     m_Metadata:
       m_Items: []
+  - m_Id: 1479395423174656
+    m_Key: Key_Daily_Reward
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1479401630744576
+    m_Key: Key_Daily_Spin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1479529473130496
+    m_Key: Key_Quests
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

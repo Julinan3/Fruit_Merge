@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Japanese
   m_GUID: de76e3c437a6ca144886739a4a5f5325
   m_SerializeEntries:
+  - m_GUID: 3c7922654ca1e1e4484f7b6fa7810bf8
+    m_Address: ShopStringCollection_ja-JP
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ja-JP
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bb6e13c28a685144d944ccb37dc763d4
     m_Address: JokerStringTable_ja-JP
     m_ReadOnly: 1
