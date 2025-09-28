@@ -9,6 +9,8 @@ public class SwapJoker : MonoBehaviour
     private bool isActive = false;
 
     [SerializeField]private GameObject selectedFruit1,selectedFruit2 = null;
+
+    public GameObject SwapVFX;
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -19,6 +21,8 @@ public class SwapJoker : MonoBehaviour
         if (!isActive)
         {
             isActive = true;
+            gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
         else if (isActive)
         {
@@ -39,7 +43,7 @@ public class SwapJoker : MonoBehaviour
                 {
                     selectedFruit1 = hit.collider.gameObject;
                 }
-                else if(selectedFruit2 == null)
+                else if(selectedFruit2 == null && selectedFruit1 != null)
                 {
                     if(hit.collider.gameObject == selectedFruit1)
                     {
@@ -49,6 +53,9 @@ public class SwapJoker : MonoBehaviour
                     {
                         selectedFruit2 = hit.collider.gameObject;
                         Vector3 tempPos = selectedFruit1.transform.position;
+
+                        Instantiate(SwapVFX, gameObject.transform.position, Quaternion.identity);
+
                         selectedFruit1.transform.position = selectedFruit2.transform.position;
                         selectedFruit2.transform.position = tempPos;
                         selectedFruit1 = null;
@@ -65,7 +72,12 @@ public class SwapJoker : MonoBehaviour
     {
         print($"<color=#008000>Everything has changed.</color>");
         yield return new WaitForSeconds(0.5f);
-        JokerManager.instance.SetJokerActive();
+
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.transform.GetChild(0).gameObject.SetActive(false);
+
+        JokerManager.instance.BlackPanel.SetActive(false);
+        JokerManager.JokerActive = false;
         JokerManager.instance.ResetButtonRaycastTarget();
     }
 }

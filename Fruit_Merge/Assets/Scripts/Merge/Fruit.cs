@@ -6,7 +6,7 @@ public class Fruit : MonoBehaviour
 {
     public int level;
     private AudioSource mergeSound;
-    [SerializeField] private GameObject[] mergeEffects;
+    public GameObject[] mergeEffects;
     [HideInInspector]public bool isMerging = false;
 
     private void Awake()

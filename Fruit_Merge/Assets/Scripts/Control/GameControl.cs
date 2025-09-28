@@ -69,7 +69,8 @@ public class GameControl : MonoBehaviour
         {
             releaseFruit = true;
             GameManager.instance.SelectedFruit.GetComponent<Rigidbody2D>().gravityScale = 1;
-            if(!firstSpawn)
+            GameManager.instance.SelectedFruit.GetComponent<SpriteRenderer>().sortingOrder = 6;
+            if (!firstSpawn)
             {
                 StartCoroutine(WaitAndSpawn());
             }

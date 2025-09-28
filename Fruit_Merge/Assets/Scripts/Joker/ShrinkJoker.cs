@@ -8,7 +8,7 @@ public class ShrinkJoker : MonoBehaviour
 
     private bool isActive = false;
 
-
+    public GameObject ShrinkVFX;
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -19,10 +19,14 @@ public class ShrinkJoker : MonoBehaviour
         if (!isActive)
         {
             isActive = true;
+            gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
         else if (isActive)
         {
             isActive = false;
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
 
@@ -38,6 +42,7 @@ public class ShrinkJoker : MonoBehaviour
                 Fruit fruit = hit.collider.GetComponent<Fruit>();
                 if (fruit != null && fruit.gameObject != GameManager.instance.SelectedFruit)
                 {
+                    Instantiate(ShrinkVFX, fruit.transform.position, Quaternion.identity);
                     fruit.transform.localScale *= 0.9f;
                     isActive = false;
                     StartCoroutine(Delay());
@@ -50,7 +55,12 @@ public class ShrinkJoker : MonoBehaviour
     {
         print($"<color=#008000>Do you need a magnifying glass?</color>");
         yield return new WaitForSeconds(0.5f);
-        JokerManager.instance.SetJokerActive();
+
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.transform.GetChild(0).gameObject.SetActive(false);
+
+        JokerManager.instance.BlackPanel.SetActive(false);
+        JokerManager.JokerActive = false;
         JokerManager.instance.ResetButtonRaycastTarget();
     }
 }

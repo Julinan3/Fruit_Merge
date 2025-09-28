@@ -8,7 +8,7 @@ public class LvlUpJoker : MonoBehaviour
 
     private bool isActive = false;
 
-
+    public GameObject LvlUpVFX;
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -19,6 +19,8 @@ public class LvlUpJoker : MonoBehaviour
         if (!isActive)
         {
             isActive = true;
+            gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
         else if (isActive)
         {
@@ -42,6 +44,8 @@ public class LvlUpJoker : MonoBehaviour
                     GameObject lvlUpedFruit = Instantiate(GameManager.instance.Fruits[FruitIndex], hit.collider.transform.position, Quaternion.identity);
                     lvlUpedFruit.name = GameManager.instance.Fruits[FruitIndex].name;
 
+                    Instantiate(LvlUpVFX, hit.collider.transform.position, Quaternion.identity);
+
                     if (lvlUpedFruit.GetComponent<GameControl>() != null)
                     {
                         Destroy(lvlUpedFruit.GetComponent<GameControl>());
@@ -63,7 +67,12 @@ public class LvlUpJoker : MonoBehaviour
     {
         print($"<color=#008000>Now more powerful.</color>");
         yield return new WaitForSeconds(0.5f);
-        JokerManager.instance.SetJokerActive();
+
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.transform.GetChild(0).gameObject.SetActive(false);
+
+        JokerManager.instance.BlackPanel.SetActive(false);
+        JokerManager.JokerActive = false;
         JokerManager.instance.ResetButtonRaycastTarget();
     }
 }

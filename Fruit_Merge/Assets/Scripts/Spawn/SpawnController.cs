@@ -19,6 +19,7 @@ public class SpawnController : MonoBehaviour
         int index = Random.Range(0, 4);
         GameObject fruit = Instantiate(GameManager.instance.Fruits[index], spawnPosition.position, Quaternion.identity);
         fruit.name = GameManager.instance.Fruits[index].name;
+        fruit.GetComponent<SpriteRenderer>().sortingOrder = 4;
 
         GameManager.instance.SelectedFruit = fruit;
 

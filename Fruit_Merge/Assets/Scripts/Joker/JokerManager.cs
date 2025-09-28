@@ -30,11 +30,11 @@ public class JokerManager : MonoBehaviour
     public GameObject BlackPanel;
 
 
-    public Image ShrinkJokerButton;
-    public Image BombJokerButton;
-    public Image LvlUpJokerButton;
-    public Image SwapJokerButton;
-    public Image DestroyJokerButton;
+    public Button ShrinkJokerButton;
+    public Button BombJokerButton;
+    public Button LvlUpJokerButton;
+    public Button SwapJokerButton;
+    public Button DestroyJokerButton;
 
     private void Awake()
     {
@@ -43,11 +43,11 @@ public class JokerManager : MonoBehaviour
     }
     public void ResetButtonRaycastTarget()
     {
-        ShrinkJokerButton.raycastTarget = true;
-        BombJokerButton.raycastTarget = true;
-        LvlUpJokerButton.raycastTarget = true;
-        SwapJokerButton.raycastTarget = true;
-        DestroyJokerButton.raycastTarget = true;
+        ShrinkJokerButton.enabled = true;
+        BombJokerButton.enabled = true;
+        LvlUpJokerButton.enabled = true;
+        SwapJokerButton.enabled = true;
+        DestroyJokerButton.enabled = true;
     }
 
     public void SetJokerActive()
@@ -133,10 +133,14 @@ public class JokerManager : MonoBehaviour
 
     void ActivateShrink()
     {
-        BombJokerButton.raycastTarget = false;
-        LvlUpJokerButton.raycastTarget = false;
-        SwapJokerButton.raycastTarget = false;
-        DestroyJokerButton.raycastTarget = false;
+        BombJokerButton.enabled = false;
+        LvlUpJokerButton.enabled = false;
+        SwapJokerButton.enabled = false;
+        DestroyJokerButton.enabled = false;
+
+        BlackPanel.SetActive(true);
+        BlackPanel.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        BlackPanel.GetComponent<Canvas>().sortingOrder = 4;
 
         ShrinkJoker.instance.Activate();
         print($"<color=#ffA500>Select the fruit that will shrink in size.</color>");
@@ -144,12 +148,15 @@ public class JokerManager : MonoBehaviour
 
     void ActivateBomb()
     {
-        ShrinkJokerButton.raycastTarget = false;
-        LvlUpJokerButton.raycastTarget = false;
-        SwapJokerButton.raycastTarget = false;
-        DestroyJokerButton.raycastTarget = false;
+        ShrinkJokerButton.enabled = false;
+        LvlUpJokerButton.enabled = false;
+        SwapJokerButton.enabled = false;
+        DestroyJokerButton.enabled = false;
 
         BlackPanel.SetActive(true);
+        BlackPanel.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        BlackPanel.GetComponent<Canvas>().sortingOrder = 6;
+
         GameObject bomb = Instantiate(BombPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 
         print($"<color=#ffA500>Drag the bomb to the location where it will explode.</color>");
@@ -157,10 +164,14 @@ public class JokerManager : MonoBehaviour
 
     void ActivateLvlUp()
     {
-        ShrinkJokerButton.raycastTarget = false;
-        BombJokerButton.raycastTarget = false;
-        SwapJokerButton.raycastTarget = false;
-        DestroyJokerButton.raycastTarget = false;
+        ShrinkJokerButton.enabled = false;
+        BombJokerButton.enabled = false;
+        SwapJokerButton.enabled = false;
+        DestroyJokerButton.enabled = false;
+
+        BlackPanel.SetActive(true);
+        BlackPanel.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        BlackPanel.GetComponent<Canvas>().sortingOrder = 4;
 
         LvlUpJoker.instance.Activate();
         print($"<color=#ffA500>Select the fruit that will level up.</color>");
@@ -168,10 +179,14 @@ public class JokerManager : MonoBehaviour
 
     void ActivateSwap()
     {
-        ShrinkJokerButton.raycastTarget = false;
-        BombJokerButton.raycastTarget = false;
-        LvlUpJokerButton.raycastTarget = false;
-        DestroyJokerButton.raycastTarget = false;
+        ShrinkJokerButton.enabled = false;
+        BombJokerButton.enabled = false;
+        LvlUpJokerButton.enabled = false;
+        DestroyJokerButton.enabled = false;
+
+        BlackPanel.SetActive(true);
+        BlackPanel.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        BlackPanel.GetComponent<Canvas>().sortingOrder = 4;
 
         SwapJoker.instance.Activate();
         print($"<color=#ffA500>Select 2 fruits to swap places.</color>");
@@ -179,10 +194,15 @@ public class JokerManager : MonoBehaviour
 
     void ActivateDestroy()
     {
-        ShrinkJokerButton.raycastTarget = false;
-        BombJokerButton.raycastTarget = false;
-        LvlUpJokerButton.raycastTarget = false;
-        SwapJokerButton.raycastTarget = false;
+        ShrinkJokerButton.enabled = false;
+        BombJokerButton.enabled = false;
+        LvlUpJokerButton.enabled = false;
+        SwapJokerButton.enabled = false;
+
+
+        BlackPanel.SetActive(true);
+        BlackPanel.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        BlackPanel.GetComponent<Canvas>().sortingOrder = 4;
 
         DestroyJoker.instance.Activate();
         print($"<color=#ffA500>Select the fruit to be destroyed.</color>");
