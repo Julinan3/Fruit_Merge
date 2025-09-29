@@ -55,7 +55,6 @@ public class ShrinkJoker : MonoBehaviour
     {
         print($"<color=#008000>Do you need a magnifying glass?</color>");
         yield return new WaitForSeconds(0.5f);
-
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
 
