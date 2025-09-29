@@ -36,6 +36,13 @@ public class JokerManager : MonoBehaviour
     public Button SwapJokerButton;
     public Button DestroyJokerButton;
 
+    public GameObject ShrinkJokerButtonCancel;
+    public GameObject BombJokerButtonCancel;
+    public GameObject LvlUpJokerButtonCancel;
+    public GameObject SwapJokerButtonCancel;
+    public GameObject DestroyJokerButtonCancel;
+
+    private GameObject temporaryBomb;
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -43,6 +50,12 @@ public class JokerManager : MonoBehaviour
     }
     public void ResetButtonRaycastTarget()
     {
+        ShrinkJokerButtonCancel.SetActive(false);
+        BombJokerButtonCancel.SetActive(false);
+        LvlUpJokerButtonCancel.SetActive(false);
+        SwapJokerButtonCancel.SetActive(false);
+        DestroyJokerButtonCancel.SetActive(false);
+
         ShrinkJokerButton.enabled = true;
         BombJokerButton.enabled = true;
         LvlUpJokerButton.enabled = true;
@@ -145,7 +158,14 @@ public class JokerManager : MonoBehaviour
         ShrinkJoker.instance.Activate();
         print($"<color=#ffA500>Select the fruit that will shrink in size.</color>");
     }
-
+    public void CancelShrinkJoker()
+    {
+        print($"<color=#FF0000>Joker Canceled!!!</color>");
+        JokerActive = false;
+        ShrinkJoker.instance.Activate();
+        ResetButtonRaycastTarget();
+        BlackPanel.SetActive(false);
+    }
     void ActivateBomb()
     {
         ShrinkJokerButton.enabled = false;
@@ -158,10 +178,21 @@ public class JokerManager : MonoBehaviour
         BlackPanel.GetComponent<Canvas>().sortingOrder = 6;
 
         GameObject bomb = Instantiate(BombPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        temporaryBomb = bomb;
 
         print($"<color=#ffA500>Drag the bomb to the location where it will explode.</color>");
     }
+    public void CancelBombJoker()
+    {
+        print($"<color=#FF0000>Joker Canceled!!!</color>");
+        isBombActive = false;
+        JokerActive = false;
+        ResetButtonRaycastTarget();
 
+        BlackPanel.SetActive(false);
+
+        Destroy(temporaryBomb);
+    }
     void ActivateLvlUp()
     {
         ShrinkJokerButton.enabled = false;
@@ -176,7 +207,14 @@ public class JokerManager : MonoBehaviour
         LvlUpJoker.instance.Activate();
         print($"<color=#ffA500>Select the fruit that will level up.</color>");
     }
-
+    public void CancelLvlUpJoker()
+    {
+        print($"<color=#FF0000>Joker Canceled!!!</color>");
+        JokerActive = false;
+        LvlUpJoker.instance.Activate();
+        ResetButtonRaycastTarget();
+        BlackPanel.SetActive(false);
+    }
     void ActivateSwap()
     {
         ShrinkJokerButton.enabled = false;
@@ -191,7 +229,14 @@ public class JokerManager : MonoBehaviour
         SwapJoker.instance.Activate();
         print($"<color=#ffA500>Select 2 fruits to swap places.</color>");
     }
-
+    public void CancelSwapJoker()
+    {
+        print($"<color=#FF0000>Joker Canceled!!!</color>");
+        JokerActive = false;
+        SwapJoker.instance.Activate();
+        ResetButtonRaycastTarget();
+        BlackPanel.SetActive(false);
+    }
     void ActivateDestroy()
     {
         ShrinkJokerButton.enabled = false;
@@ -207,7 +252,14 @@ public class JokerManager : MonoBehaviour
         DestroyJoker.instance.Activate();
         print($"<color=#ffA500>Select the fruit to be destroyed.</color>");
     }
-
+    public void CancelDestroyJoker()
+    {
+        print($"<color=#FF0000>Joker Canceled!!!</color>");
+        JokerActive = false;
+        DestroyJoker.instance.Activate();
+        ResetButtonRaycastTarget();
+        BlackPanel.SetActive(false);
+    }
     void ShowRewardedAd(System.Action onSuccess)
     {
         // Unity Ads Rewarded implementasyonu gelecek

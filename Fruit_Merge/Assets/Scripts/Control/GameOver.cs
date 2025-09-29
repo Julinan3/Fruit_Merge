@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-    public GameObject GameOverUI;
-    public TextMeshProUGUI ScoreText;
-    public TextMeshProUGUI CoinRewardText;
-
-    private bool gameOverTriggered = false;
+    public static bool gameOverTriggered = false;
 
     private void Start()
     {
@@ -23,11 +19,7 @@ public class GameOver : MonoBehaviour
             if (col.GetComponent<Fruit>() != null && !gameOverTriggered)
             {
                 gameOverTriggered = true;
-                Debug.Log("Game Over!!! " + col.gameObject.name);
-                GameOverUI.SetActive(true);
-
-                ScoreText.text = "" + GameManager.instance.Score.ToString();
-                CoinRewardText.text = "" + (GameManager.instance.Score / 5).ToString();
+                GameManager.instance.GameOver();
             }
         }
     }

@@ -27,6 +27,10 @@ public class SwapJoker : MonoBehaviour
         else if (isActive)
         {
             isActive = false;
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            selectedFruit1 = null;
+            selectedFruit2 = null;
         }
     }
 

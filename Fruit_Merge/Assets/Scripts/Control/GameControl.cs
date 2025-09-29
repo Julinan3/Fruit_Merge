@@ -104,7 +104,7 @@ public class GameControl : MonoBehaviour
     bool TryGetPointerPosition(out Vector2 pos)
     {
         // Mobile
-        if (Input.touchCount > 0 && !EventSystem.current.IsPointerOverGameObject() && !JokerManager.JokerActive)
+        if (Input.touchCount > 0 && !EventSystem.current.IsPointerOverGameObject() && !JokerManager.JokerActive && !GameOver.gameOverTriggered)
         {
             Touch t = Input.GetTouch(0);
             if (t.phase == TouchPhase.Moved || t.phase == TouchPhase.Stationary || t.phase == TouchPhase.Began)
@@ -115,7 +115,7 @@ public class GameControl : MonoBehaviour
         }
 
         // PC
-        if (Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject() && !JokerManager.JokerActive)
+        if (Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject() && !JokerManager.JokerActive && !GameOver.gameOverTriggered)
         {
             pos = Input.mousePosition;
             return true;

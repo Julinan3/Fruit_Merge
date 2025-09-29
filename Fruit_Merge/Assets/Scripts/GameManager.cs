@@ -30,6 +30,10 @@ public class GameManager : MonoBehaviour
     [Space(20)]
     [Header("Merge Sound")]
     public AudioSource mergeSound;
+    [Space(20)]
+    [Header("Game Over")]
+    public GameObject GameOverUI;
+    public TextMeshProUGUI GameOverCoinRewardText;
 
     private void Awake()
     {
@@ -74,7 +78,12 @@ public class GameManager : MonoBehaviour
             mergeSound.Play();
         }
     }
+    public void GameOver()
+    {
+        GameOverUI.SetActive(true);
 
+        GameOverCoinRewardText.text = "" + (GameManager.instance.Score / 5).ToString();
+    }
     private void Update()
     {
         if (displayedScore < Score)

@@ -14,6 +14,8 @@ public class Bomb : MonoBehaviour
 
     private void OnMouseDown()
     {
+        JokerManager.instance.BombJokerButton.enabled = false;
+
         DefaultPos = gameObject.transform.position;
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         offset = transform.position - new Vector3(mousePos.x, mousePos.y, 0f);
@@ -64,6 +66,7 @@ public class Bomb : MonoBehaviour
         JokerManager.instance.ResetButtonRaycastTarget();
         Destroy(gameObject);
     }
+
 
     private void OnDrawGizmosSelected()
     {
