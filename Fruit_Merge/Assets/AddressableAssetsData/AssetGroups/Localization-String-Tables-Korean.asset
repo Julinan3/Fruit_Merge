@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Korean
   m_GUID: fb74d3761f085d8499b2fb511dd33137
   m_SerializeEntries:
+  - m_GUID: 5b9515b99198af043b6b7a184947363e
+    m_Address: NumberStringTable_ko-KR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ko-KR
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9e673346bbda7c249a151e49871de4be
     m_Address: JokerStringTable_ko-KR
     m_ReadOnly: 1

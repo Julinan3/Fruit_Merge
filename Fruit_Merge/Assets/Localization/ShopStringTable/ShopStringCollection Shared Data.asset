@@ -14,7 +14,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
   m_TableCollectionName: ShopStringCollection
   m_TableCollectionNameGuidString: 6dc3f25965db87a49b9054c66eabbd6f
-  m_Entries: []
+  m_Entries:
+  - m_Id: 541877987065856
+    m_Key: Key_Daily
+    m_Metadata:
+      m_Items: []
+  - m_Id: 541881040519168
+    m_Key: Key_Chest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542181755338752
+    m_Key: Key_Coin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 543487257624576
+    m_Key: Key_Special
+    m_Metadata:
+      m_Items: []
+  - m_Id: 541883523547136
+    m_Key: Key_Coin_Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542045390127104
+    m_Key: Key_Subscribe_Tittle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542050221965312
+    m_Key: Key_Subscribe_Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542626821324800
+    m_Key: Key_RemoveAds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 543640966283264
+    m_Key: Key_3_Random
+    m_Metadata:
+      m_Items: []
+  - m_Id: 543719219412992
+    m_Key: Key_10_Random
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

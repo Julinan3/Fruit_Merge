@@ -21,6 +21,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-ja-JP
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b86836e10358804c8b6b4e8f20277bb
+    m_Address: NumberStringTable_ja-JP
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ja-JP
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bb6e13c28a685144d944ccb37dc763d4
     m_Address: JokerStringTable_ja-JP
     m_ReadOnly: 1

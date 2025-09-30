@@ -50,6 +50,18 @@ MonoBehaviour:
     m_Localized: "Param\xE8tres"
     m_Metadata:
       m_Items: []
+  - m_Id: 1479395423174656
+    m_Localized: "R\xE9compense Quotidienne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1479401630744576
+    m_Localized: "Tourn\xE9e Quotidienne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1479529473130496
+    m_Localized: "Qu\xEAtes"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

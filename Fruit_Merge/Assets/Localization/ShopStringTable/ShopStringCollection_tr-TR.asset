@@ -17,7 +17,47 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 6dc3f25965db87a49b9054c66eabbd6f, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 541877987065856
+    m_Localized: "G\xDCNL\xDCK"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 541881040519168
+    m_Localized: SANDIK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542181755338752
+    m_Localized: "CO\u0130N"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 543487257624576
+    m_Localized: "\xD6ZEL"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 541883523547136
+    m_Localized: "CO\u0130N PAKET\u0130"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542045390127104
+    m_Localized: "15 g\xFCn boyunca her g\xFCn 1000 coin al!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542050221965312
+    m_Localized: "15 G\xDCNL\xDCK COIN\\nABONEL\u0130\u011E\u0130"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542626821324800
+    m_Localized: REKLAMLARI KALDIR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 543640966283264
+    m_Localized: 3 RASTGELE JOKER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 543719219412992
+    m_Localized: 10 RASTGELE JOKER
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

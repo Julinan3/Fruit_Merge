@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Russian
   m_GUID: 0621bae457fad004988facc6039b49f2
   m_SerializeEntries:
+  - m_GUID: 4a3f70c8ff4b49d4b833f2ee85526bf9
+    m_Address: NumberStringTable_ru
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-ru
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ddb338e7634fbbf468838e9db6cb4ca8
     m_Address: ShopStringCollection_ru
     m_ReadOnly: 1

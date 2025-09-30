@@ -50,6 +50,18 @@ MonoBehaviour:
     m_Localized: Einstellungen
     m_Metadata:
       m_Items: []
+  - m_Id: 1479395423174656
+    m_Localized: "T\xE4gliche Belohnung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1479401630744576
+    m_Localized: "T\xE4gliches Drehen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1479529473130496
+    m_Localized: Quests
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

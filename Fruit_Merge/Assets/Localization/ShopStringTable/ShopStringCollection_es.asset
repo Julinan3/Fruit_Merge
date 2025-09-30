@@ -17,7 +17,47 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 6dc3f25965db87a49b9054c66eabbd6f, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 541877987065856
+    m_Localized: Diario
+    m_Metadata:
+      m_Items: []
+  - m_Id: 541881040519168
+    m_Localized: Cofre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542181755338752
+    m_Localized: Moneda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 543487257624576
+    m_Localized: Especial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 541883523547136
+    m_Localized: Paquete de Monedas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542045390127104
+    m_Localized: "\xA1Obt\xE9n 1000 monedas diarias durante 15 d\xEDas!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542050221965312
+    m_Localized: "15 D\xCDAS DE MONEDAS\\nSUSCRIPCI\xD3N"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 542626821324800
+    m_Localized: Eliminar anuncios
+    m_Metadata:
+      m_Items: []
+  - m_Id: 543640966283264
+    m_Localized: 3 comodines aleatorios
+    m_Metadata:
+      m_Items: []
+  - m_Id: 543719219412992
+    m_Localized: 10 comodines aleatorios
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
