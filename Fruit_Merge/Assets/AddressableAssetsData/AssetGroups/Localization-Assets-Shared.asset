@@ -35,6 +35,12 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e14e04bde67c675469fceed277add55c
+    m_Address: Assets/Localization/SideBarStringTable/SideBarStringCollection Shared
+      Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f67e1e0d25e8a0345a4a990f1f8d2935
     m_Address: Assets/Localization/FlagAssetTable/FlagAssetCollection Shared Data.asset
     m_ReadOnly: 1

@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SideBarStringCollection_fr
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: e14e04bde67c675469fceed277add55c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 113815470080
+    m_Localized: Demain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 214067724288
+    m_Localized: Bonus Quotidien
+    m_Metadata:
+      m_Items: []
+  - m_Id: 290039152640
+    m_Localized: JOUR 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 473779027968
+    m_Localized: JOUR 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 476329164800
+    m_Localized: JOUR 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 479080628224
+    m_Localized: JOUR 4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 482440265728
+    m_Localized: JOUR 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 592024846336
+    m_Localized: JOUR 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 610383314944
+    m_Localized: JOUR 7
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12276856668160
+    m_Localized: Tirage Quotidien
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12339263717376
+    m_Localized: Quitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12394964074496
+    m_Localized: TOURNER!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
