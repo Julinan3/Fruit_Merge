@@ -50,6 +50,14 @@ MonoBehaviour:
     m_Localized: 25,000
     m_Metadata:
       m_Items: []
+  - m_Id: 152801899331584
+    m_Localized: Buy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 152841988489216
+    m_Localized: 100
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
