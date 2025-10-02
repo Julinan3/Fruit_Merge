@@ -62,6 +62,33 @@ MonoBehaviour:
     m_Localized: "G\xF6revler"
     m_Metadata:
       m_Items: []
+  - m_Id: 2586155512905728
+    m_Localized: KULLANICI ID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586160080502784
+    m_Localized: "DE\u011EERLEND\u0130R"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586231215898624
+    m_Localized: HAKKINDA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2593763229581312
+    m_Localized: "\u0130ki indie geli\u015Ftirici taraf\u0131ndan sevgiyle yap\u0131ld\u0131.\\n\\nFruit
+      Bash bizim tutkumuz ve bunu sizinle payla\u015Fmaktan mutluluk duyuyoruz.\\n\\nGeri
+      Bildirim: <link=\"mailto:feedback.heiyra@gmail.com\">feedback.heiyra@gmail.com</link>\\n\\nYolculu\u011Fumuzun
+      bir par\xE7as\u0131 oldu\u011Funuz i\xE7in te\u015Fekk\xFCrler!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597002847076352
+    m_Localized: Sonra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597060615225344
+    m_Localized: "Reklamlar\u0131 kald\u0131rmak istiyor musun?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

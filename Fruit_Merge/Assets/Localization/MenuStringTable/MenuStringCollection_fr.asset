@@ -62,6 +62,33 @@ MonoBehaviour:
     m_Localized: "Qu\xEAtes"
     m_Metadata:
       m_Items: []
+  - m_Id: 2586155512905728
+    m_Localized: ID Utilisateur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586160080502784
+    m_Localized: "\xC9valuer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586231215898624
+    m_Localized: "\xC0 propos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2593763229581312
+    m_Localized: "R\xE9alis\xE9 avec amour par deux d\xE9veloppeurs ind\xE9pendants.\\n\\nFruit
+      Bash est notre passion et nous sommes heureux de le partager avec vous.\\n\\nRetour:
+      <link=\"mailto:feedback.heiyra@gmail.com\">feedback.heiyra@gmail.com</link>\\n\\nMerci
+      de faire partie de notre aventure !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597002847076352
+    m_Localized: Plus tard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597060615225344
+    m_Localized: "Voulez-vous supprimer les publicit\xE9s ?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

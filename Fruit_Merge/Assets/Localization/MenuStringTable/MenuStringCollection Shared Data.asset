@@ -59,6 +59,30 @@ MonoBehaviour:
     m_Key: Key_Quests
     m_Metadata:
       m_Items: []
+  - m_Id: 2586155512905728
+    m_Key: Key_User_ID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586160080502784
+    m_Key: Key_Rate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586231215898624
+    m_Key: Key_About
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2593763229581312
+    m_Key: Key_About_Info
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597002847076352
+    m_Key: Key_Later
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597060615225344
+    m_Key: Key_AdsRemove_Info
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -62,6 +62,33 @@ MonoBehaviour:
     m_Localized: Quests
     m_Metadata:
       m_Items: []
+  - m_Id: 2586155512905728
+    m_Localized: BENUTZER-ID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586160080502784
+    m_Localized: Bewerten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586231215898624
+    m_Localized: "\xDCber"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2593763229581312
+    m_Localized: 'Von zwei Indie-Entwicklern mit Liebe gemacht.\n\nFruit Bash ist
+      unsere Leidenschaft, und wir freuen uns, es mit dir zu teilen.\n\nFeedback:
+      <link="mailto:feedback.heiyra@gmail.com">feedback.heiyra@gmail.com</link>\n\nDanke,
+      dass du Teil unserer Reise bist!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597002847076352
+    m_Localized: "Sp\xE4ter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597060615225344
+    m_Localized: "M\xF6chten Sie die Werbung entfernen?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

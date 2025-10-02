@@ -62,6 +62,32 @@ MonoBehaviour:
     m_Localized: Missioni
     m_Metadata:
       m_Items: []
+  - m_Id: 2586155512905728
+    m_Localized: ID Utente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586160080502784
+    m_Localized: Valuta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586231215898624
+    m_Localized: Informazioni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2593763229581312
+    m_Localized: "Creato con amore da due sviluppatori indie.\\n\\nFruit Bash \xE8
+      la nostra passione e siamo felici di condividerlo con te.\\n\\nFeedback: <link=\"mailto:feedback.heiyra@gmail.com\">feedback.heiyra@gmail.com</link>\\n\\nGrazie
+      per far parte del nostro viaggio!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597002847076352
+    m_Localized: "Pi\xF9 tardi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597060615225344
+    m_Localized: Vuoi rimuovere gli annunci?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

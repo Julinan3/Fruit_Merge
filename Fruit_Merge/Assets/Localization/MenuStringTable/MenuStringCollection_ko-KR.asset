@@ -62,6 +62,34 @@ MonoBehaviour:
     m_Localized: "\uD018\uC2A4\uD2B8"
     m_Metadata:
       m_Items: []
+  - m_Id: 2586155512905728
+    m_Localized: "\uC0AC\uC6A9\uC790 ID"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586160080502784
+    m_Localized: "\uD3C9\uAC00\uD558\uAE30"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586231215898624
+    m_Localized: "\uC815\uBCF4"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2593763229581312
+    m_Localized: "\uB450 \uBA85\uC758 \uC778\uB514 \uAC1C\uBC1C\uC790\uAC00 \uC0AC\uB791\uC744
+      \uB2F4\uC544 \uB9CC\uB4E4\uC5C8\uC2B5\uB2C8\uB2E4.\\n\\nFruit Bash\uB294 \uC6B0\uB9AC\uC758
+      \uC5F4\uC815\uC774\uBA70 \uC5EC\uB7EC\uBD84\uACFC \uB098\uB20C \uC218 \uC788\uC5B4
+      \uAE30\uC069\uB2C8\uB2E4.\\n\\n\uD53C\uB4DC\uBC31: <link=\"mailto:feedback.heiyra@gmail.com\">feedback.heiyra@gmail.com</link>\\n\\n\uC6B0\uB9AC
+      \uC5EC\uC815\uC758 \uC77C\uBD80\uAC00 \uB418\uC5B4 \uC8FC\uC154\uC11C \uAC10\uC0AC\uD569\uB2C8\uB2E4!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597002847076352
+    m_Localized: "\uB098\uC911\uC5D0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597060615225344
+    m_Localized: "\uAD11\uACE0\uB97C \uC81C\uAC70\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

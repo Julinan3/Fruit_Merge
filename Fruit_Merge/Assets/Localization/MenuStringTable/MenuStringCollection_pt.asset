@@ -62,6 +62,33 @@ MonoBehaviour:
     m_Localized: "Miss\xF5es"
     m_Metadata:
       m_Items: []
+  - m_Id: 2586155512905728
+    m_Localized: "ID de Usu\xE1rio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586160080502784
+    m_Localized: Avaliar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2586231215898624
+    m_Localized: Sobre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2593763229581312
+    m_Localized: "Feito com amor por dois desenvolvedores indie.\\n\\nFruit Bash
+      \xE9 a nossa paix\xE3o e estamos felizes em compartilh\xE1-lo com voc\xEA.\\n\\nFeedback:
+      <link=\"mailto:feedback.heiyra@gmail.com\">feedback.heiyra@gmail.com</link>\\n\\nObrigado
+      por fazer parte da nossa jornada!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597002847076352
+    m_Localized: Mais tarde
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2597060615225344
+    m_Localized: "Deseja remover os an\xFAncios?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
