@@ -35,6 +35,13 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverUI;
     public TextMeshProUGUI GameOverCoinRewardText;
 
+    public bool isAdsRemoved;
+    public int JokerID_1;
+    public int JokerID_2;
+    public int JokerID_3;
+    public int JokerID_4;
+    public int JokerID_5;
+
     private void Awake()
     {
         QualitySettings.vSyncCount = 0;
