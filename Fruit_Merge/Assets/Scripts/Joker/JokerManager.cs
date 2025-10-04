@@ -47,6 +47,8 @@ public class JokerManager : MonoBehaviour
     {
         if (instance == null) instance = this;
         else Destroy(gameObject);
+
+        JokerActive = false;
     }
     public void ResetButtonRaycastTarget()
     {

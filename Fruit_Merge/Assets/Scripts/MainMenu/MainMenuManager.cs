@@ -3,6 +3,7 @@ using UnityEngine;
 public class MainMenuManager : MonoBehaviour
 {
     public static MainMenuManager Instance;
+    public static int? SelectedLastMissionID;
 
     [HideInInspector] public int SelectedPanelIndex = 0;
     public ScaleAnimation[] SelectAnimations;
@@ -10,6 +11,8 @@ public class MainMenuManager : MonoBehaviour
     {
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 90;
+
+        SelectedLastMissionID = null;
     }
     public void OpenMainMenu()
     {

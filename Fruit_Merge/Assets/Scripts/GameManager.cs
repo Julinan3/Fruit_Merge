@@ -50,6 +50,8 @@ public class GameManager : MonoBehaviour
     {
         ScoreAnim.tween.SetAutoKill(false);
         ScoreAnim.tween.Pause();
+
+        print(MainMenuManager.SelectedLastMissionID);
     }
     public void AddScore(int amount)
     {
