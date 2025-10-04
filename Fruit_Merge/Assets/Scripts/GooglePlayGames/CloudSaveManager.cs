@@ -9,6 +9,9 @@ public class CloudSaveManager : MonoBehaviour
 {
     public static CloudSaveManager Instance { get; private set; }
 
+    // Cloud save aktif/pasif kontrolü
+    [SerializeField] public bool CloudActive = true;
+
     void Awake()
     {
         if (Instance == null) { Instance = this; DontDestroyOnLoad(gameObject); }
@@ -17,6 +20,12 @@ public class CloudSaveManager : MonoBehaviour
 
     public void SaveData(string saveName, string jsonData)
     {
+        if (!CloudActive)
+        {
+            Debug.Log("[CloudSaveManager] CloudActive pasif, cloud save atlandý.");
+            return;
+        }
+
         if (!Social.localUser.authenticated)
         {
             Debug.LogWarning("Google Play Games ile giriþ yapýlmamýþ, save iþlemi yapýlamaz.");
@@ -46,6 +55,13 @@ public class CloudSaveManager : MonoBehaviour
 
     public void LoadData(string saveName, Action<string> callback)
     {
+        if (!CloudActive)
+        {
+            Debug.Log("[CloudSaveManager] CloudActive pasif, cloud load atlandý.");
+            callback?.Invoke(null);
+            return;
+        }
+
         if (!Social.localUser.authenticated)
         {
             callback?.Invoke(null);
