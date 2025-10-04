@@ -4,13 +4,10 @@ using UnityEngine.UI;
 
 public class SceneChanger : MonoBehaviour
 {
-    public void LoadMissionsScene(Button btn)
+    public void LoadGameScene(Button btn)
     {
-        MainMenuManager.SelectedLastMissionID = int.Parse(btn.gameObject.name);
-        SceneManager.LoadScene("MissionsScene");
-    }
-    public void LoadMainGameScene()
-    {
+        if(btn.gameObject.name != "Button_Game")
+            MainMenuManager.SelectedLastMissionID = int.Parse(btn.gameObject.name);
         SceneManager.LoadScene("MainGame");
     }
     public void LoadMainMenuScene()
