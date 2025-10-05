@@ -41,11 +41,11 @@ public class GameDataManager : MonoBehaviour
         public bool isAdsRemoved;
         public int Score;
         public int Coin;
-        public int JokerID_1;
-        public int JokerID_2;
-        public int JokerID_3;
-        public int JokerID_4;
-        public int JokerID_5;
+        public int JokerID_Bomb;
+        public int JokerID_Blast;
+        public int JokerID_Shrink;
+        public int JokerID_Up;
+        public int JokerID_Switch;
         // Ýhtiyaç halinde baþka alanlar ekleyin
     }
 
@@ -58,11 +58,11 @@ public class GameDataManager : MonoBehaviour
             isAdsRemoved = gm != null ? gm.isAdsRemoved : false,
             Score = gm != null ? gm.Score : 0,
             Coin = gm != null ? gm.Coin : 0,
-            JokerID_1 = gm != null ? gm.JokerID_1 : 0,
-            JokerID_2 = gm != null ? gm.JokerID_2 : 0,
-            JokerID_3 = gm != null ? gm.JokerID_3 : 0,
-            JokerID_4 = gm != null ? gm.JokerID_4 : 0,
-            JokerID_5 = gm != null ? gm.JokerID_5 : 0
+            JokerID_Bomb = gm != null ? gm.JokerID_Bomb : 0,
+            JokerID_Blast = gm != null ? gm.JokerID_Blast : 0,
+            JokerID_Shrink = gm != null ? gm.JokerID_Shrink : 0,
+            JokerID_Up = gm != null ? gm.JokerID_Up : 0,
+            JokerID_Switch = gm != null ? gm.JokerID_Switch : 0
         };
     }
 
@@ -80,11 +80,11 @@ public class GameDataManager : MonoBehaviour
         gm.isAdsRemoved = state.isAdsRemoved;
         gm.Score = state.Score;
         gm.Coin = state.Coin;
-        gm.JokerID_1 = state.JokerID_1;
-        gm.JokerID_2 = state.JokerID_2;
-        gm.JokerID_3 = state.JokerID_3;
-        gm.JokerID_4 = state.JokerID_4;
-        gm.JokerID_5 = state.JokerID_5;
+        gm.JokerID_Bomb = state.JokerID_Bomb;
+        gm.JokerID_Blast = state.JokerID_Blast;
+        gm.JokerID_Shrink = state.JokerID_Shrink;
+        gm.JokerID_Up = state.JokerID_Up;
+        gm.JokerID_Switch = state.JokerID_Switch;
     }
 
     // Save to local PlayerPrefs (quick backup)

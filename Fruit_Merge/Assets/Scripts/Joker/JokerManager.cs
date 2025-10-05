@@ -1,4 +1,3 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,7 +28,6 @@ public class JokerManager : MonoBehaviour
     public GameObject BombPrefab;
     public GameObject BlackPanel;
 
-
     public Button ShrinkJokerButton;
     public Button BombJokerButton;
     public Button LvlUpJokerButton;
@@ -43,6 +41,10 @@ public class JokerManager : MonoBehaviour
     public GameObject DestroyJokerButtonCancel;
 
     private GameObject temporaryBomb;
+
+    [Header("Rewarded Ad Manager")]
+    public MultiRewardedAdManager rewardedAdManager; // Inspector'dan atayýn
+
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -50,6 +52,7 @@ public class JokerManager : MonoBehaviour
 
         JokerActive = false;
     }
+
     public void ResetButtonRaycastTarget()
     {
         ShrinkJokerButtonCancel.SetActive(false);
@@ -73,77 +76,89 @@ public class JokerManager : MonoBehaviour
     {
         BlackPanel.SetActive(false);
     }
+
     public void UseShrinkJoker()
     {
-        /*
-        if (GameManager.instance.SpendCoin(shrinkCost))
+        if (GameManager.instance.UseJoker(GameManager.JokerType.Shrink))
+        {
+            ActivateShrink();
+        }
+        else if (GameManager.instance.SpendCoin(shrinkCost))
         {
             ActivateShrink();
         }
         else
         {
-            ShowRewardedAd(() => ActivateShrink());
+            ShowRewardedAd(0, ActivateShrink); // 0: shrink için rewarded ad index
         }
-        */
-        ActivateShrink();
     }
 
     public void UseBombJoker()
     {
-        if (/*GameManager.instance.SpendCoin(bombCost) &&*/ !isBombActive)
+        if (isBombActive) return;
+
+        if (GameManager.instance.UseJoker(GameManager.JokerType.Bomb))
+        {
+            isBombActive = true;
+            ActivateBomb();
+        }
+        else if (GameManager.instance.SpendCoin(bombCost))
         {
             isBombActive = true;
             ActivateBomb();
         }
         else
         {
-            //ShowRewardedAd(() => ActivateBomb());
+            ShowRewardedAd(1, () => { isBombActive = true; ActivateBomb(); }); // 1: bomb için rewarded ad index
         }
     }
 
     public void UseLvlUpJoker()
     {
-        /*
-        if (GameManager.instance.SpendCoin(LvlUpCost))
+        if (GameManager.instance.UseJoker(GameManager.JokerType.Up))
+        {
+            ActivateLvlUp();
+        }
+        else if (GameManager.instance.SpendCoin(LvlUpCost))
         {
             ActivateLvlUp();
         }
         else
         {
-            ShowRewardedAd(() => ActivateLvlUp());
+            ShowRewardedAd(2, ActivateLvlUp); // 2: lvl up için rewarded ad index
         }
-        */
-        ActivateLvlUp();
     }
 
     public void UseSwapJoker()
     {
-        /*
-        if (GameManager.instance.SpendCoin(SwapCost))
+        if (GameManager.instance.UseJoker(GameManager.JokerType.Switch))
+        {
+            ActivateSwap();
+        }
+        else if (GameManager.instance.SpendCoin(SwapCost))
         {
             ActivateSwap();
         }
         else
         {
-            ShowRewardedAd(() => ActivateSwap());
+            ShowRewardedAd(3, ActivateSwap); // 3: swap için rewarded ad index
         }
-        */
-        ActivateSwap();
     }
 
     public void UseDestroyJoker()
     {
-        /*
-        if (GameManager.instance.SpendCoin(SwapCost))
+        if (GameManager.instance.UseJoker(GameManager.JokerType.Blast))
+        {
+            ActivateDestroy();
+        }
+        else if (GameManager.instance.SpendCoin(DestroyJokerCost))
         {
             ActivateDestroy();
         }
         else
         {
-            ShowRewardedAd(() => ActivateDestroy());
+            ShowRewardedAd(4, ActivateDestroy); // 4: destroy için rewarded ad index
         }
-        */
-        ActivateDestroy();
     }
 
     void ActivateShrink()
@@ -246,7 +261,6 @@ public class JokerManager : MonoBehaviour
         LvlUpJokerButton.enabled = false;
         SwapJokerButton.enabled = false;
 
-
         BlackPanel.SetActive(true);
         BlackPanel.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.SetActive(false);
         BlackPanel.GetComponent<Canvas>().sortingOrder = 4;
@@ -262,10 +276,22 @@ public class JokerManager : MonoBehaviour
         ResetButtonRaycastTarget();
         BlackPanel.SetActive(false);
     }
-    void ShowRewardedAd(System.Action onSuccess)
+
+    // index: MultiRewardedAdManager'daki ilgili joker için rewarded ad index'i
+    void ShowRewardedAd(int index, System.Action onSuccess)
     {
-        // Unity Ads Rewarded implementasyonu gelecek
-        Debug.Log("Reklam izlendi!");
-        onSuccess?.Invoke();
+        if (rewardedAdManager != null)
+        {
+            rewardedAdManager.ShowRewarded(index);
+            // Burada reklam izlendikten sonra callback tetiklenmeli.
+            // Bunu MultiRewardedAdManager'da event/callback ile baðlayabilirsiniz.
+            // Þimdilik doðrudan çaðýrýyoruz (test için):
+            Debug.Log("Reklam izlendi!");
+            onSuccess?.Invoke();
+        }
+        else
+        {
+            Debug.LogWarning("RewardedAdManager atanmamýþ!");
+        }
     }
 }
