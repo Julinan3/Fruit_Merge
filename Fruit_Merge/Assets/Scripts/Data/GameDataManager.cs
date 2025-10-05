@@ -39,8 +39,9 @@ public class GameDataManager : MonoBehaviour
     public class GameState
     {
         public bool isAdsRemoved;
-        public int Score;
+        public int BestScore;
         public int Coin;
+        public int AllScore;
         public int JokerID_Bomb;
         public int JokerID_Blast;
         public int JokerID_Shrink;
@@ -56,7 +57,8 @@ public class GameDataManager : MonoBehaviour
         return new GameState
         {
             isAdsRemoved = gm != null ? gm.isAdsRemoved : false,
-            Score = gm != null ? gm.Score : 0,
+            BestScore = gm != null ? gm.BestScore : 0,
+            AllScore = gm != null ? gm.AllScore : 0,
             Coin = gm != null ? gm.Coin : 0,
             JokerID_Bomb = gm != null ? gm.JokerID_Bomb : 0,
             JokerID_Blast = gm != null ? gm.JokerID_Blast : 0,
@@ -78,7 +80,8 @@ public class GameDataManager : MonoBehaviour
         }
 
         gm.isAdsRemoved = state.isAdsRemoved;
-        gm.Score = state.Score;
+        gm.BestScore = state.BestScore;
+        gm.AllScore = state.AllScore;
         gm.Coin = state.Coin;
         gm.JokerID_Bomb = state.JokerID_Bomb;
         gm.JokerID_Blast = state.JokerID_Blast;

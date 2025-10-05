@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     [Header("Score")]
     [Space(10)]
     public int Score = 10000;
+    public int BestScore;
+    public int AllScore;
     public TextMeshProUGUI ScoreText;
     public DOTweenAnimation ScoreAnim;
     public bool isShaking = false;
@@ -103,6 +105,13 @@ public class GameManager : MonoBehaviour
         UpdateCoinText();
         GameDataManager.Instance?.SaveLocal();
         if (pushToCloud) GameDataManager.Instance?.PushLocalToCloud();
+    }
+
+    public void SetCoins()
+    {
+        Coin += 100;
+        UpdateCoinText();
+        GameDataManager.Instance?.SaveLocal();
     }
 
     // Harcama - mevcut imza korunarak düzeltilmiş (önceden Score kontrolü yapılıyordu)
