@@ -1,6 +1,4 @@
-﻿using DG.Tweening;
-using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -14,28 +12,13 @@ public class GameManager : MonoBehaviour
     public int Score = 10000;
     public int BestScore;
     public int AllScore;
-    public TextMeshProUGUI ScoreText;
-    public DOTweenAnimation ScoreAnim;
-    public bool isShaking = false;
 
     [Space(20)]
     [Header("Coin")]
     [Space(10)]
     public int Coin = 0;
-    public TextMeshProUGUI CoinText;
 
     [Space(20)]
-
-    private float displayedScore = 0;
-    private float increaseSpeed = 600f;
-
-    [Space(20)]
-    [Header("Merge Sound")]
-    public AudioSource mergeSound;
-    [Space(20)]
-    [Header("Game Over")]
-    public GameObject GameOverUI;
-    public TextMeshProUGUI GameOverCoinRewardText;
 
     public bool isAdsRemoved;
     public int JokerID_Bomb;
@@ -54,27 +37,22 @@ public class GameManager : MonoBehaviour
         if (instance == null) instance = this;
         else Destroy(gameObject);
 
-        mergeSound = GetComponent<AudioSource>();
-
     }
     private void Start()
     {
-        ScoreAnim.tween.SetAutoKill(false);
-        ScoreAnim.tween.Pause();
-
         print(MainMenuManager.SelectedLastMissionID);
 
         // UI başlangıç güncellemeleri
-        UpdateScoreTextImmediate();
-        UpdateCoinText();
+        //UpdateBestScoreTextImmediate();
+        //UpdateCoinText();
+        CheckAndUpdateBestScore();
     }
 
     // Score ekleme — mevcut davranışı korur, ayrıca best score kontrolü yapar
     public void AddScore(int amount)
     {
         Score += amount;
-        ScoreAnim.DORestart();
-        isShaking = true;
+        UpdateMainGameText.Instance.TriggerScoreAnimation();
 
         CheckAndUpdateBestScore();
         GameDataManager.Instance?.SaveLocal();
@@ -94,6 +72,7 @@ public class GameManager : MonoBehaviour
             GameDataManager.Instance?.SaveLocal();
             // Eğer otomatik olarak cloud'a göndermek isterseniz:
             // GameDataManager.Instance?.PushLocalToCloud();
+            UpdateMainGameText.Instance.UpdateBestScoreText();
         }
     }
 
@@ -102,7 +81,7 @@ public class GameManager : MonoBehaviour
     {
         if (amount <= 0) return;
         Coin += amount;
-        UpdateCoinText();
+        //UpdateCoinText();
         GameDataManager.Instance?.SaveLocal();
         if (pushToCloud) GameDataManager.Instance?.PushLocalToCloud();
     }
@@ -110,7 +89,7 @@ public class GameManager : MonoBehaviour
     public void SetCoins()
     {
         Coin += 100;
-        UpdateCoinText();
+        //UpdateCoinText();
         GameDataManager.Instance?.SaveLocal();
     }
 
@@ -121,19 +100,12 @@ public class GameManager : MonoBehaviour
         if (Coin >= amount)
         {
             Coin -= amount;
-            UpdateCoinText();
+            UpdateMainGameText.Instance.UpdateCoinText();
             GameDataManager.Instance?.SaveLocal();
             return true;
         }
         return false;
     }
-
-    private void UpdateCoinText()
-    {
-        if (CoinText != null)
-            CoinText.text = Coin.ToString();
-    }
-
     // Joker yönetimi
     public void AddJoker(JokerType type, int amount = 1)
     {
@@ -197,48 +169,12 @@ public class GameManager : MonoBehaviour
         if (pushToCloud) GameDataManager.Instance?.PushLocalToCloud();
     }
 
-    public void PlayMergeSound(AudioSource source)
-    {
-        if (mergeSound != null && source != null)
-        {
-            mergeSound.clip = source.clip;
-            mergeSound.pitch = Random.Range(0.8f, 1.2f);
-            mergeSound.Play();
-        }
-    }
-    public void GameOver()
-    {
-        GameOverUI.SetActive(true);
-
-        GameOverCoinRewardText.text = "" + (GameManager.instance.Score / 5).ToString();
-    }
-    private void Update()
-    {
-        if (displayedScore < Score)
-        {
-            displayedScore += increaseSpeed * Time.deltaTime;
-
-            if (displayedScore >= Score) // eşitlik kontrolü toleranslı
-            {
-                displayedScore = Score;
-
-                // burada artık animasyonu durdurabilirsin
-                if (isShaking)
-                {
-                    ScoreAnim.tween.Pause();
-                    ScoreText.transform.localScale = Vector3.one;
-                    isShaking = false;
-                }
-            }
-
-            ScoreText.text = Mathf.FloorToInt(displayedScore).ToString();
-        }
-    }
-
     // Hemen UI'ı güncellemek istersen (Start içinde kullanılıyor)
+    /*
     private void UpdateScoreTextImmediate()
     {
         if (ScoreText != null)
             ScoreText.text = Score.ToString();
     }
+    */
 }

@@ -37,7 +37,7 @@ public class Fruit : MonoBehaviour
         GameObject newFruit = Instantiate(GameManager.instance.Fruits[newLevel], mergePos, Quaternion.identity);
         newFruit.name = GameManager.instance.Fruits[newLevel].name;
 
-        GameManager.instance.PlayMergeSound(mergeSound);
+        UpdateMainGameText.Instance.PlayMergeSound(mergeSound);
 
         GameObject efect = Instantiate(mergeEffects[level], transform.position, Quaternion.identity);
         float efectscale = 2f + (level * 0.4f);
